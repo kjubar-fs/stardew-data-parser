@@ -1,3 +1,16 @@
+## TODOs and keep in mind
+### Manual data entry
+- boots sprite indices
+- animal production times
+- fruit tree grow times
+- recipe sources (for non-friendship)
+- remove lantern from tools
+
+### Special handling
+- some localized string tags use more than 2 `/`s
+- tool sprite should use `MenuSpriteIndex` if exists, then fall back to `SpriteIndex`
+- parsing for queries in locations for fish
+
 ## Data Structures
 The data structures output by this tool.
 
