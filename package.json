@@ -1,0 +1,19 @@
+{
+  "name": "stardew-data-parser",
+  "version": "0.0.1",
+  "description": "A utility for parsing raw data dumped from StardewXnbHack into more usable JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kjubar-fs/stardew-data-parser.git"
+  },
+  "author": "kjubar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjubar-fs/stardew-data-parser/issues"
+  },
+  "homepage": "https://github.com/kjubar-fs/stardew-data-parser#readme"
+}
