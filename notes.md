@@ -22,17 +22,17 @@ Non-optional:
 - `name` - display name (en-US)
 - `description` - item description (en-US)
 - `type` - item type
-    - `Litter`
-    - `Basic`
-    - `Minerals`
-    - `Quest`
+    - `litter`
+    - `basic`
+    - `minerals`
+    - `quest`
     - `asdf`
-    - `Crafting`
-    - `Arch`
+    - `crafting`
+    - `arch`
     - `fish`
-    - `Cooking`
-    - `Seeds`
-    - `Ring`
+    - `cooking`
+    - `seeds`
+    - `ring`
     - `interactive`
 - `category` - item category
     - see https://stardewvalleywiki.com/Modding:Items#Categories
@@ -44,7 +44,7 @@ Optional:
 - `onConsume` - an object with the effects when the item is consumed
     - `energy` - energy restored
     - `health` - health restored
-    - `buffs` - (optional) IDs of buffs added
+    - `buffs` - (optional) array of IDs of buffs added
 
 ### Buffs
 #### Fields
