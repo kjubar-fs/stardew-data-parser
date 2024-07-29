@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 29 Jul 2024, 3:29:31 PM
+ *  Last update: 29 Jul 2024, 5:14:39 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -11,8 +11,8 @@ export class Item {
     description;
     type;
     category;
-    texture;
     spriteIndex;
+    texture = "springobjects";
     price = 0;
     onConsume = null;
 
@@ -28,8 +28,7 @@ export class Item {
      * @param {number} spriteIndex index of sprite in texture directory
      */
     constructor(
-        id, nameInternal, name, description, type, category,
-        texture, spriteIndex
+        id, nameInternal, name, description, type, category, spriteIndex
     ) {
         this.id = id;
         this.nameInternal = nameInternal;
@@ -37,7 +36,6 @@ export class Item {
         this.description = description;
         this.type = type;
         this.category = category;
-        this.texture = texture;
         this.spriteIndex = spriteIndex;
     }
 }
@@ -45,7 +43,7 @@ export class Item {
 export class ConsumptionEffects {
     energy;
     health;
-    buffs = null;
+    buffs = [];
 
     /**
      * Create a new ConsumptionEffects.
@@ -59,11 +57,12 @@ export class ConsumptionEffects {
 }
 
 export class Buff {
+    id;
     name;
     duration;
     spriteIndex;
     isDebuff = false;
-    effects = {};
+    effects = null;
     description = null;
 
     /**
@@ -72,7 +71,8 @@ export class Buff {
      * @param {number} duration buff duration
      * @param {number} spriteIndex index of sprite in texture directory
      */
-    constructor(name, duration, spriteIndex) {
+    constructor(id, name, duration, spriteIndex) {
+        this.id = id;
         this.name = name;
         this.duration = duration;
         this.spriteIndex = spriteIndex;
