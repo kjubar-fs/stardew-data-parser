@@ -14,6 +14,38 @@
 ## Data Structures
 The data structures output by this tool.
 
+### Objects
+#### Fields
+Non-optional:
+- `id` - internal item ID
+- `nameInternal` - internal item name
+- `name` - display name (en-US)
+- `description` - item description (en-US)
+- `type` - item type
+    - `Litter`
+    - `Basic`
+    - `Minerals`
+    - `Quest`
+    - `asdf`
+    - `Crafting`
+    - `Arch`
+    - `fish`
+    - `Cooking`
+    - `Seeds`
+    - `Ring`
+    - `interactive`
+- `category` - item category
+    - see https://stardewvalleywiki.com/Modding:Items#Categories
+- `texture` - directory containing the item's sprite
+- `spriteIndex` - index of sprite in the sprite directory
+- `price` - sale price of item when sold to merchants
+
+Optional:
+- `onConsume` - an object with the effects when the item is consumed
+    - `energy` - energy restored
+    - `health` - health restored
+    - `buffs` - (optional) buffs added
+
 ### Tools
 #### Fields
 Non-optional:
