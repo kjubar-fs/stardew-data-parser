@@ -1,0 +1,451 @@
+{
+  "Axe": {
+    "ClassName": "Axe",
+    "Name": "Axe",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.1]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.14019]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 189,
+    "MenuSpriteIndex": 215,
+    "UpgradeLevel": 0
+  },
+  "CopperAxe": {
+    "ClassName": "Axe",
+    "Name": "Copper Axe",
+    "SalePrice": 2000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.1]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.14019]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 196,
+    "MenuSpriteIndex": 222,
+    "UpgradeLevel": 1,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)Axe"
+  },
+  "SteelAxe": {
+    "ClassName": "Axe",
+    "Name": "Steel Axe",
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.1]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.14019]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 203,
+    "MenuSpriteIndex": 229,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)CopperAxe"
+  },
+  "GoldAxe": {
+    "ClassName": "Axe",
+    "Name": "Gold Axe",
+    "SalePrice": 10000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.1]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.14019]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 231,
+    "MenuSpriteIndex": 257,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)SteelAxe"
+  },
+  "IridiumAxe": {
+    "ClassName": "Axe",
+    "Name": "Iridium Axe",
+    "SalePrice": 25000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.1]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Axe.cs.14019]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 238,
+    "MenuSpriteIndex": 264,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)GoldAxe"
+  },
+  "BambooPole": {
+    "ClassName": "FishingRod",
+    "Name": "Bamboo Pole",
+    "AttachmentSlots": 0,
+    "SalePrice": 500,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14045]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14042]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 8,
+    "UpgradeLevel": 0
+  },
+  "TrainingRod": {
+    "ClassName": "FishingRod",
+    "Name": "Training Rod",
+    "AttachmentSlots": 0,
+    "SalePrice": 2000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14046]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.trainingRodDescription]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 9,
+    "UpgradeLevel": 1
+  },
+  "FiberglassRod": {
+    "ClassName": "FishingRod",
+    "Name": "Fiberglass Rod",
+    "AttachmentSlots": 1,
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14047]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14042]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 10,
+    "UpgradeLevel": 2
+  },
+  "IridiumRod": {
+    "ClassName": "FishingRod",
+    "Name": "Iridium Rod",
+    "AttachmentSlots": 2,
+    "SalePrice": 15000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14048]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:FishingRod.cs.14042]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 11,
+    "UpgradeLevel": 3
+  },
+  "AdvancedIridiumRod": {
+    "ClassName": "FishingRod",
+    "Name": "Advanced Iridium Rod",
+    "AttachmentSlots": 3,
+    "SalePrice": 30000,
+    "DisplayName": "[LocalizedText Strings\\1_6_Strings:AdvancedIridiumRod]",
+    "Description": "[LocalizedText Strings\\1_6_Strings:AdvancedIridiumRodDescription]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 17,
+    "UpgradeLevel": 4
+  },
+  "Hoe": {
+    "ClassName": "Hoe",
+    "Name": "Hoe",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14101]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14102]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 21,
+    "MenuSpriteIndex": 47,
+    "UpgradeLevel": 0
+  },
+  "CopperHoe": {
+    "ClassName": "Hoe",
+    "Name": "Copper Hoe",
+    "SalePrice": 2000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14101]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14102]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 28,
+    "MenuSpriteIndex": 54,
+    "UpgradeLevel": 1,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)Hoe"
+  },
+  "SteelHoe": {
+    "ClassName": "Hoe",
+    "Name": "Steel Hoe",
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14101]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14102]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 35,
+    "MenuSpriteIndex": 61,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)CopperHoe"
+  },
+  "GoldHoe": {
+    "ClassName": "Hoe",
+    "Name": "Gold Hoe",
+    "SalePrice": 10000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14101]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14102]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 63,
+    "MenuSpriteIndex": 89,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)SteelHoe"
+  },
+  "IridiumHoe": {
+    "ClassName": "Hoe",
+    "Name": "Iridium Hoe",
+    "SalePrice": 25000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14101]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Hoe.cs.14102]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 70,
+    "MenuSpriteIndex": 96,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)GoldHoe"
+  },
+  "Lantern": {
+    "ClassName": "Lantern",
+    "Name": "Lantern",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Lantern.cs.14115]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Lantern.cs.14114]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 74
+  },
+  "MilkPail": {
+    "ClassName": "MilkPail",
+    "Name": "Milk Pail",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:MilkPail.cs.14167]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:MilkPail.cs.14168]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 6
+  },
+  "Pan": {
+    "ClassName": "Pan",
+    "Name": "Pan",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pan.cs.14180]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pan.cs.14181]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 12,
+    "UpgradeLevel": 1
+  },
+  "SteelPan": {
+    "ClassName": "Pan",
+    "Name": "Steel Pan",
+    "DisplayName": "[LocalizedText Strings\\1_6_Strings:PanToolBaseName]",
+    "Description": "[LocalizedText Strings\\1_6_Strings:SteelPanDescription]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 18,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)Pan"
+  },
+  "GoldPan": {
+    "ClassName": "Pan",
+    "Name": "Gold Pan",
+    "DisplayName": "[LocalizedText Strings\\1_6_Strings:PanToolBaseName]",
+    "Description": "[LocalizedText Strings\\1_6_Strings:GoldPanDescription]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 19,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)SteelPan"
+  },
+  "IridiumPan": {
+    "ClassName": "Pan",
+    "Name": "Iridium Pan",
+    "DisplayName": "[LocalizedText Strings\\1_6_Strings:PanToolBaseName]",
+    "Description": "[LocalizedText Strings\\1_6_Strings:IridiumPanDescription]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 20,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)GoldPan"
+  },
+  "Pickaxe": {
+    "ClassName": "Pickaxe",
+    "Name": "Pickaxe",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14184]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14185]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 105,
+    "MenuSpriteIndex": 131,
+    "UpgradeLevel": 0
+  },
+  "CopperPickaxe": {
+    "ClassName": "Pickaxe",
+    "Name": "Copper Pickaxe",
+    "SalePrice": 2000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14184]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14185]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 112,
+    "MenuSpriteIndex": 138,
+    "UpgradeLevel": 1,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)Pickaxe"
+  },
+  "SteelPickaxe": {
+    "ClassName": "Pickaxe",
+    "Name": "Steel Pickaxe",
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14184]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14185]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 119,
+    "MenuSpriteIndex": 145,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)CopperPickaxe"
+  },
+  "GoldPickaxe": {
+    "ClassName": "Pickaxe",
+    "Name": "Gold Pickaxe",
+    "SalePrice": 10000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14184]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14185]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 147,
+    "MenuSpriteIndex": 173,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)SteelPickaxe"
+  },
+  "IridiumPickaxe": {
+    "ClassName": "Pickaxe",
+    "Name": "Iridium Pickaxe",
+    "SalePrice": 25000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14184]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Pickaxe.cs.14185]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 154,
+    "MenuSpriteIndex": 180,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)GoldPickaxe"
+  },
+  "ReturnScepter": {
+    "ClassName": "Wand",
+    "Name": "Return Scepter",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Wand.cs.14318]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Wand.cs.14319]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 2
+  },
+  "Shears": {
+    "ClassName": "Shears",
+    "Name": "Shears",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:Shears.cs.14240]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:Shears.cs.14241]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 7
+  },
+  "WateringCan": {
+    "ClassName": "WateringCan",
+    "Name": "Watering Can",
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14324]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14325]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 273,
+    "MenuSpriteIndex": 296,
+    "UpgradeLevel": 0
+  },
+  "CopperWateringCan": {
+    "ClassName": "WateringCan",
+    "Name": "Copper Watering Can",
+    "SalePrice": 2000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14324]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14325]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 280,
+    "MenuSpriteIndex": 303,
+    "UpgradeLevel": 1,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)WateringCan"
+  },
+  "SteelWateringCan": {
+    "ClassName": "WateringCan",
+    "Name": "Steel Watering Can",
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14324]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14325]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 287,
+    "MenuSpriteIndex": 310,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)CopperWateringCan"
+  },
+  "GoldWateringCan": {
+    "ClassName": "WateringCan",
+    "Name": "Gold Watering Can",
+    "SalePrice": 10000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14324]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14325]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 315,
+    "MenuSpriteIndex": 338,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)SteelWateringCan"
+  },
+  "IridiumWateringCan": {
+    "ClassName": "WateringCan",
+    "Name": "Iridium Watering Can",
+    "SalePrice": 25000,
+    "DisplayName": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14324]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:WateringCan.cs.14325]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 322,
+    "MenuSpriteIndex": 345,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "ConventionalUpgradeFrom": "(T)GoldWateringCan"
+  },
+  "CopperTrashCan": {
+    "ClassName": "GenericTool",
+    "Name": "Copper Trash Can",
+    "SalePrice": 1000,
+    "DisplayName": "[LocalizedText Strings\\\\StringsFromCSFiles:TrashCan]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:TrashCan_Description 15]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 13,
+    "UpgradeLevel": 1,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "UpgradeFrom": [
+      {
+        "Condition": "PLAYER_HAS_TRASH_CAN_LEVEL Current 0 0",
+        "TradeItemId": "(O)334",
+        "TradeItemAmount": 5
+      }
+    ]
+  },
+  "SteelTrashCan": {
+    "ClassName": "GenericTool",
+    "Name": "Steel Trash Can",
+    "SalePrice": 2500,
+    "DisplayName": "[LocalizedText Strings\\\\StringsFromCSFiles:TrashCan]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:TrashCan_Description 30]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 14,
+    "UpgradeLevel": 2,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "UpgradeFrom": [
+      {
+        "Condition": "PLAYER_HAS_TRASH_CAN_LEVEL Current 1 1",
+        "TradeItemId": "(O)335",
+        "TradeItemAmount": 5
+      }
+    ]
+  },
+  "GoldTrashCan": {
+    "ClassName": "GenericTool",
+    "Name": "Gold Trash Can",
+    "SalePrice": 5000,
+    "DisplayName": "[LocalizedText Strings\\\\StringsFromCSFiles:TrashCan]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:TrashCan_Description 45]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 15,
+    "UpgradeLevel": 3,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "UpgradeFrom": [
+      {
+        "Condition": "PLAYER_HAS_TRASH_CAN_LEVEL Current 2 2",
+        "TradeItemId": "(O)336",
+        "TradeItemAmount": 5
+      }
+    ]
+  },
+  "IridiumTrashCan": {
+    "ClassName": "GenericTool",
+    "Name": "Iridium Trash Can",
+    "SalePrice": 12500,
+    "DisplayName": "[LocalizedText Strings\\\\StringsFromCSFiles:TrashCan]",
+    "Description": "[LocalizedText Strings\\StringsFromCSFiles:TrashCan_Description 60]",
+    "Texture": "TileSheets\\tools",
+    "SpriteIndex": 16,
+    "UpgradeLevel": 4,
+    "ApplyUpgradeLevelToDisplayName": true,
+    "UpgradeFrom": [
+      {
+        "Condition": "PLAYER_HAS_TRASH_CAN_LEVEL Current 3 3",
+        "TradeItemId": "(O)337",
+        "TradeItemAmount": 5
+      }
+    ]
+  }
+}

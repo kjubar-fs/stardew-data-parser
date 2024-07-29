@@ -1,0 +1,976 @@
+{
+  "472": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "24",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 0,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "473": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      3,
+      4
+    ],
+    "RegrowDays": 3,
+    "IsRaised": true,
+    "HarvestItemId": "188",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 1,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "474": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      4,
+      4,
+      1
+    ],
+    "HarvestItemId": "190",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 2,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "475": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "HarvestItemId": "192",
+    "ExtraHarvestChance": 0.2,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 3,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "476": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "248",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 4,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "273": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "IsPaddyCrop": true,
+    "HarvestItemId": "271",
+    "HarvestMaxIncreasePerFarmingLevel": 0.1,
+    "ExtraHarvestChance": 0.1,
+    "HarvestMethod": "Scythe",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 34,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "831": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "IsPaddyCrop": true,
+    "HarvestItemId": "830",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 42,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "477": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "HarvestItemId": "250",
+    "HarvestMethod": "Scythe",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 5,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "478": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      2,
+      2,
+      2,
+      3,
+      4
+    ],
+    "HarvestItemId": "252",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 6,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "745": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "RegrowDays": 4,
+    "HarvestItemId": "400",
+    "ExtraHarvestChance": 0.02,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 36,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "479": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      3,
+      3,
+      3
+    ],
+    "HarvestItemId": "254",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 7,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "480": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      2,
+      2,
+      2,
+      2,
+      3
+    ],
+    "RegrowDays": 4,
+    "HarvestItemId": "256",
+    "ExtraHarvestChance": 0.05,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 8,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "481": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      3,
+      3,
+      4,
+      2
+    ],
+    "RegrowDays": 4,
+    "HarvestItemId": "258",
+    "HarvestMinStack": 3,
+    "HarvestMaxStack": 3,
+    "ExtraHarvestChance": 0.02,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 9,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "482": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "RegrowDays": 3,
+    "HarvestItemId": "260",
+    "ExtraHarvestChance": 0.03,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 10,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "483": {
+    "Seasons": [
+      "Summer",
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "262",
+    "HarvestMethod": "Scythe",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 11,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "484": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      2,
+      1,
+      2,
+      1
+    ],
+    "HarvestItemId": "264",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 12,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "485": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      2,
+      1,
+      2,
+      2,
+      2
+    ],
+    "HarvestItemId": "266",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 13,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "486": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      2,
+      3,
+      2,
+      3,
+      3
+    ],
+    "HarvestItemId": "268",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 14,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "833": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      3,
+      3,
+      4,
+      3
+    ],
+    "RegrowDays": 7,
+    "HarvestItemId": "832",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 43,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "433": {
+    "Seasons": [
+      "Spring",
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      3,
+      2
+    ],
+    "RegrowDays": 2,
+    "HarvestItemId": "433",
+    "HarvestMinStack": 4,
+    "ExtraHarvestChance": 0.02,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 40,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "802": {
+    "Seasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
+    "DaysInPhase": [
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "RegrowDays": 3,
+    "PlantableLocationRules": [
+      {
+        "Id": "NotOutsideUnlessGingerIsland",
+        "Condition": "LOCATION_IS_OUTDOORS Here, !LOCATION_CONTEXT Here Island",
+        "Result": "Deny",
+        "DeniedMessage": "[LocalizedText Strings\\Objects:CactusSeedsOutside]"
+      }
+    ],
+    "HarvestItemId": "90",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 41,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "487": {
+    "Seasons": [
+      "Summer",
+      "Fall"
+    ],
+    "DaysInPhase": [
+      2,
+      3,
+      3,
+      3,
+      3
+    ],
+    "RegrowDays": 4,
+    "HarvestItemId": "270",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 15,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "302": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      2,
+      3,
+      4
+    ],
+    "RegrowDays": 1,
+    "IsRaised": true,
+    "HarvestItemId": "304",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 37,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "301": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      2,
+      3,
+      3
+    ],
+    "RegrowDays": 3,
+    "IsRaised": true,
+    "HarvestItemId": "398",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 38,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "299": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "HarvestItemId": "300",
+    "HarvestMethod": "Scythe",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 39,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "488": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "RegrowDays": 5,
+    "HarvestItemId": "272",
+    "ExtraHarvestChance": 0.002,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 16,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "489": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      2,
+      2,
+      1,
+      2,
+      1
+    ],
+    "HarvestItemId": "274",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 17,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "490": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      3,
+      4,
+      3
+    ],
+    "HarvestItemId": "276",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 18,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "491": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "278",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 19,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "492": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      3,
+      3,
+      3
+    ],
+    "HarvestItemId": "280",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 20,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "493": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "RegrowDays": 5,
+    "HarvestItemId": "282",
+    "HarvestMinStack": 2,
+    "ExtraHarvestChance": 0.1,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 21,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "494": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "HarvestItemId": "284",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 22,
+    "CountForMonoculture": true,
+    "CountForPolyculture": true
+  },
+  "499": {
+    "Seasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "DaysInPhase": [
+      2,
+      7,
+      7,
+      7,
+      5
+    ],
+    "RegrowDays": 7,
+    "PlantableLocationRules": [
+      {
+        "Id": "NoGardenPots",
+        "PlantedIn": "GardenPot",
+        "Result": "Deny",
+        "DeniedMessage": "[LocalizedText Strings\\Objects:AncientFruitPot]"
+      }
+    ],
+    "HarvestItemId": "454",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 24,
+    "CountForMonoculture": true,
+    "CountForPolyculture": false
+  },
+  "427": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      2,
+      2
+    ],
+    "HarvestItemId": "591",
+    "TintColors": [
+      "#FFBAFF",
+      "#DFBFFF",
+      "#FFF600",
+      "#FF5000",
+      "#FF9EC1"
+    ],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 26,
+    "CountForMonoculture": true,
+    "CountForPolyculture": false
+  },
+  "429": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "HarvestItemId": "597",
+    "TintColors": [
+      "#237FFF",
+      "#6D83FF",
+      "#70CFFF",
+      "#BFE4FF",
+      "#5E79FF",
+      "#2896FF"
+    ],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 27,
+    "CountForMonoculture": true,
+    "CountForPolyculture": false
+  },
+  "453": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "HarvestItemId": "376",
+    "TintColors": [
+      "Red",
+      "#FEFEFE",
+      "#FFAA00"
+    ],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 28,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "455": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "HarvestItemId": "593",
+    "TintColors": [
+      "#00D0FF",
+      "#63FFD2",
+      "#FFD400",
+      "#FF907A",
+      "#FF00EE",
+      "#CE5BFF"
+    ],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 29,
+    "CountForMonoculture": true,
+    "CountForPolyculture": false
+  },
+  "431": {
+    "Seasons": [
+      "Summer",
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      3,
+      2
+    ],
+    "HarvestItemId": "421",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 30,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "425": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      4,
+      4,
+      3
+    ],
+    "HarvestItemId": "595",
+    "TintColors": [
+      "#BB00FF",
+      "#7789FF",
+      "#47E3FF",
+      "#FF7F90",
+      "#CDB2FF",
+      "#8C77FF"
+    ],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 31,
+    "CountForMonoculture": true,
+    "CountForPolyculture": false
+  },
+  "347": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      2,
+      4,
+      6,
+      6,
+      6
+    ],
+    "HarvestItemId": "417",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 32,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "495": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      3,
+      4
+    ],
+    "HarvestItemId": "16",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 23,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "496": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      3,
+      4
+    ],
+    "HarvestItemId": "396",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 23,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "497": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      3,
+      4
+    ],
+    "HarvestItemId": "404",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 23,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "498": {
+    "Seasons": [
+      "Winter"
+    ],
+    "DaysInPhase": [
+      3,
+      4
+    ],
+    "HarvestItemId": "412",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 23,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "885": {
+    "Seasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "NeedsWatering": false,
+    "HarvestItemId": "771",
+    "HarvestMinStack": 4,
+    "HarvestMaxStack": 7,
+    "ExtraHarvestChance": 0.01,
+    "HarvestMethod": "Scythe",
+    "HarvestMaxQuality": 0,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 44,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "890": {
+    "Seasons": [
+      "Spring",
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "889",
+    "HarvestMaxQuality": 0,
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 47,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "CarrotSeeds": {
+    "Seasons": [
+      "Spring"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1
+    ],
+    "HarvestItemId": "Carrot",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 48,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "SummerSquashSeeds": {
+    "Seasons": [
+      "Summer"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "RegrowDays": 3,
+    "HarvestItemId": "SummerSquash",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 49,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "BroccoliSeeds": {
+    "Seasons": [
+      "Fall"
+    ],
+    "DaysInPhase": [
+      1,
+      2,
+      2,
+      3
+    ],
+    "RegrowDays": 4,
+    "HarvestItemId": "Broccoli",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 50,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  },
+  "PowdermelonSeeds": {
+    "Seasons": [
+      "Winter"
+    ],
+    "DaysInPhase": [
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "HarvestItemId": "Powdermelon",
+    "TintColors": [],
+    "Texture": "TileSheets\\crops",
+    "SpriteIndex": 51,
+    "CountForMonoculture": false,
+    "CountForPolyculture": false
+  }
+}
