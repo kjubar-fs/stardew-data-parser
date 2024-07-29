@@ -46,6 +46,18 @@ Optional:
     - `health` - health restored
     - `buffs` - (optional) buffs added
 
+### Buffs
+#### Fields
+Non-optional:
+- `name` - display name (en-US)
+- `duration` - buff duration
+- `spriteIndex` - index of sprite in the sprite directory
+- `isDebuff` - `true` if the buff is actually a debuff
+- `effects` - a [string: value] object where the key is a stat name and the value is the adjustment amount
+
+Optional:
+- `description` - buff description (en-US)
+
 ### Tools
 #### Fields
 Non-optional:
