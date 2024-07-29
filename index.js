@@ -1,23 +1,25 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 29 Jul 2024, 2:01:34 PM
+ *  Last update: 29 Jul 2024, 3:36:05 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
+import { Item } from "./src/data-model/classes.js";
 import { DATA_DIRECTORY, loadRawJson } from "./src/files/read.js";
 
 // process objects
 const objects = loadRawJson(DATA_DIRECTORY, "Objects");
-checkObjectProps(objects);
+checkProps(objects);
 
-
+const buffs = loadRawJson(DATA_DIRECTORY, "Buffs");
+checkProps(buffs);
 
 /**
  * Given the data parsed from a JSON file, check the unique
  * and optional/non-optional properties.
  * @param {object[]} objects parsed objects from JSON file
  */
-function checkObjectProps(objects) {
+function checkProps(objects) {
     const uniqueProps = new Set();
     const objVals = Object.values(objects);
     for (const item of objVals) {
@@ -26,14 +28,14 @@ function checkObjectProps(objects) {
         }
     }
     console.log("All props:", uniqueProps);
-    const nonOptionalProps = new Set();
-    const optionalProps = new Set();
+    const nonOptionalProps = [];
+    const optionalProps = [];
     for (const prop of uniqueProps) {
         const isNotOptional = objVals.every(obj => obj.hasOwnProperty(prop));
         if (isNotOptional) {
-            nonOptionalProps.add(prop);
+            nonOptionalProps.push(prop);
         } else {
-            optionalProps.add(prop);
+            optionalProps.push(prop);
         }
     }
     console.log("Non-optional props:", nonOptionalProps);
