@@ -44,11 +44,12 @@ Optional:
 - `onConsume` - an object with the effects when the item is consumed
     - `energy` - energy restored
     - `health` - health restored
-    - `buffs` - (optional) buffs added
+    - `buffs` - (optional) IDs of buffs added
 
 ### Buffs
 #### Fields
 Non-optional:
+- `id` - internal buff ID, will be `food_<FoodID>` if it is a custom buff from a food item
 - `name` - display name (en-US)
 - `duration` - buff duration
 - `spriteIndex` - index of sprite in the sprite directory
