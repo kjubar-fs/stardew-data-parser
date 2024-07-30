@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 29 Jul 2024, 5:14:39 PM
+ *  Last update: 30 Jul 2024, 2:37:56 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -14,7 +14,7 @@ export class Item {
     spriteIndex;
     texture = "springobjects";
     price = 0;
-    onConsume = null;
+    onConsume;
 
     /**
      * Create a new Item object.
@@ -43,7 +43,7 @@ export class Item {
 export class ConsumptionEffects {
     energy;
     health;
-    buffs = [];
+    buffs;
 
     /**
      * Create a new ConsumptionEffects.
@@ -63,7 +63,7 @@ export class Buff {
     spriteIndex;
     isDebuff = false;
     effects = null;
-    description = null;
+    description;
 
     /**
      * Create a new Buff.
@@ -77,4 +77,20 @@ export class Buff {
         this.duration = duration;
         this.spriteIndex = spriteIndex;
     }
+}
+
+export class Crop {
+    id;
+    seasons;
+    growthDays;
+    harvestItemId;
+    spriteIndex;
+    onTrellis = false;
+    paddyCrop = false;
+    regrowthDays;
+    extraHarvestChance;
+    minHarvest;
+    maxHarvest;
+    noWater;
+    scytheHarvest;
 }

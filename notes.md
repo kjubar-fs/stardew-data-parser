@@ -5,18 +5,23 @@
 - fruit tree grow times
 - recipe sources (for non-friendship)
 - remove lantern from tools
+- cactus fruit can only be planted outside on Ginger Island
+- ancient fruit can't be grown in planter pots
+- fiber and qi fruit can't be any quality but normal
 
 ### Special handling
 - some localized string tags use more than 2 `/`s
 - tool sprite should use `MenuSpriteIndex` if exists, then fall back to `SpriteIndex`
 - parsing for queries in locations for fish
+- positive fractions are rounded down (`Math.floor`), negative fractions are rounded up (`Math.ceil`)
+- paddy crops' grow time is multiplied by 0.75 when irrigated
+- rice shoots give 2 rice 50% of the time at farming 0, and 3 rice 50% of the time at farming 10
 
 ## Data Structures
 The data structures output by this tool.
 
 ### Objects
-#### Fields
-Non-optional:
+#### Non-optional:
 - `id` - internal item ID
 - `nameInternal` - internal item name
 - `name` - display name (en-US)
@@ -40,15 +45,14 @@ Non-optional:
 - `spriteIndex` - index of sprite in the sprite directory
 - `price` - sale price of item when sold to merchants
 
-Optional:
+#### Optional:
 - `onConsume` - an object with the effects when the item is consumed
     - `energy` - energy restored
     - `health` - health restored
     - `buffs` - (optional) array of IDs of buffs added
 
 ### Buffs
-#### Fields
-Non-optional:
+#### Non-optional:
 - `id` - internal buff ID, will be `food_<FoodID>` if it is a custom buff from a food item
 - `name` - display name (en-US)
 - `duration` - buff duration
@@ -56,8 +60,32 @@ Non-optional:
 - `isDebuff` - `true` if the buff is actually a debuff
 - `effects` - a [string: value] object where the key is a stat name and the value is the adjustment amount
 
-Optional:
+#### Optional:
 - `description` - buff description (en-US)
+
+### Crops
+#### Non-optional:
+- `id` - internal crop ID
+- `seasons` - array of seasons this crop will grow in
+    - `spring`
+    - `summer`
+    - `fall`
+    - `winter`
+- `growthDays` - number of days for crop to grow, will be the initial growth time for regrowing crops
+- `harvestItemId` - internal ID of item harvested from this crop
+- `spriteIndex` - index of sprite in the sprite directory
+- `onTrellis` - `true` if the crop grows on an unpassable trellis
+- `paddyCrop` - `true` if the crop can be irrigated to grow faster
+
+#### Optional:
+- `regrowthDays` - number of days for the crop to regrow
+- `extraHarvestChance` - chance of harvesting additional crops
+- `minHarvest` - minimum number harvested
+- `maxHarvest` - maximum number harvested
+- `noWater` - `true` if this crop doesn't need to be watered
+- `scytheHarvest` - `true` if this crop is harvested with a scythe instead of by hand
+
+## To add later
 
 ### Tools
 #### Fields

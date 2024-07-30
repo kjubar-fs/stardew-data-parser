@@ -1,10 +1,10 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 1:16:08 PM
+ *  Last update: 30 Jul 2024, 2:39:36 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
-import { Item, Buff, ConsumptionEffects } from "./src/data-model/classes.js";
+import { Item, Buff, ConsumptionEffects, Crop } from "./src/data-model/classes.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
 import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
@@ -15,12 +15,15 @@ const csFileStrings = loadRawJson(STRINGS_DIRECTORY, "StringsFromCSFiles");
 
 const objectsParsed = [];
 const buffsParsed = [];
+const cropsParsed = [];
 
-processDataFile("Objects", processObject);
-processDataFile("Buffs", processBuff);
+// processDataFile("Objects", processObject);
+// processDataFile("Buffs", processBuff);
+processDataFile("Crops", processCrop);
+console.log(cropsParsed);
 
-writeObjectsToJson("objects", objectsParsed);
-writeObjectsToJson("buffs", buffsParsed);
+// writeObjectsToJson("objects", objectsParsed);
+// writeObjectsToJson("buffs", buffsParsed);
 
 ///-----------
 /// Functions
@@ -87,6 +90,8 @@ function processObject(id, obj) {
 
         // handle possible buffs array
         if (!!obj.Buffs) {
+            effects.buffs = [];
+            
             for (const buff of obj.Buffs) {
                 // if we have a BuffId, this points to a static buff
                 if (!!buff.BuffId) {
@@ -149,6 +154,12 @@ function processBuff(id, obj) {
 
     buffsParsed.push(buff);
     if (DEBUG) console.log(buff);
+}
+
+function processCrop(id, obj) {
+    // if ("IsPaddyCrop" in obj) {
+    //     cropsParsed.push(obj);
+    // }
 }
 
 /**
