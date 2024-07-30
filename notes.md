@@ -1,5 +1,7 @@
 ## TODOs and keep in mind
 ### Data files to do
+- TV/CookingChannel.json
+- SpecialRecipeSources.json
 - CookingRecipes.json
 - FruitTrees.json
 
@@ -106,11 +108,10 @@ The data structures output by this tool.
 - `name` - recipe name
 - `ingredients` - a [string: number] object where the key is an internal item ID and the value is the quantity
 - `yield` - internal ID of item crafted by this recipe
-- `unlockConditions` - condition string for unlocking the recipe, if it's standard
-    - see https://stardewvalleywiki.com/Modding:Recipe_data#Unlock_conditions
+- `unlockConditions` - array of condition strings for unlocking this recipe
 
 #### Optional:
-- `specialUnlock` - array of special condition strings for unlocking this recipe (used for non-standard unlock conditions)
+- none
 
 ## To add later
 
