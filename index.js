@@ -1,10 +1,10 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 3:14:30 PM
+ *  Last update: 30 Jul 2024, 7:29:55 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
-import { Item, Buff, ConsumptionEffects, Crop } from "./src/data-model/classes.js";
+import { Item, Buff, ConsumptionEffects, Crop, FruitTree } from "./src/data-model/classes.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
 import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
@@ -23,11 +23,12 @@ const cookingRecipesParsed = [];
 // processDataFile("Buffs", processBuff);
 // processDataFile("Crops", processCrop);
 processDataFile("FruitTrees", processFruitTree);
-processDataFile("CookingRecipes", processCookingRecipe);
+// processDataFile("CookingRecipes", processCookingRecipe);
 
 // writeObjectsToJson("objects", objectsParsed);
 // writeObjectsToJson("buffs", buffsParsed);
 // writeObjectsToJson("crops", cropsParsed);
+writeObjectsToJson("fruitTrees", fruitTreesParsed);
 
 ///-----------
 /// Functions
@@ -222,7 +223,15 @@ function processCrop(id, obj) {
  * @param {any} obj fruit tree data object
  */
 function processFruitTree(id, obj) {
-    
+    // create base fruit tree
+    const tree = new FruitTree(
+        id,
+        obj.Seasons.map((season) => season.toLowerCase()),
+        obj.Fruit[0].ItemId.split(")").pop()    // split off possible "(O)" prefix
+    );
+
+    fruitTreesParsed.push(tree);
+    if (DEBUG) console.log(tree);
 }
 
 /**

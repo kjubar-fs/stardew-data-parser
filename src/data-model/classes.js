@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 30 Jul 2024, 2:44:37 PM
+ *  Last update: 30 Jul 2024, 7:14:03 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -109,5 +109,23 @@ export class Crop {
         this.growthDays = growthDays;
         this.harvestItemId = harvestItemId;
         this.spriteIndex = spriteIndex;
+    }
+}
+
+export class FruitTree {
+    id;
+    seasons;
+    fruitId;
+
+    /**
+     * Create a new FruitTree.
+     * @param {string} id fruit tree ID
+     * @param {string[]} seasons produce seasons
+     * @param {string} fruitId object ID of fruit given when harvesting
+     */
+    constructor(id, seasons, fruitId) {
+        this.id = id;
+        this.seasons = seasons;
+        this.fruitId = fruitId;
     }
 }
