@@ -1,15 +1,12 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 12:30:09 PM
+ *  Last update: 30 Jul 2024, 12:34:19 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects } from "./src/data-model/classes.js";
-import {
-    DATA_DIRECTORY, STRINGS_DIRECTORY,
-    loadRawJson
-} from "./src/files/read.js";
-import { DEBUG } from "./src/globals.js";
+import { loadRawJson } from "./src/files/read.js";
+import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
 
 const objStrings = loadRawJson(STRINGS_DIRECTORY, "Objects");
 const newStrings = loadRawJson(STRINGS_DIRECTORY, "1_6_Strings");

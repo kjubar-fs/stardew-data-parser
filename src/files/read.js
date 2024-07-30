@@ -1,17 +1,13 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 26 Jul 2024, 5:17:35 PM
- *  Last update: 30 Jul 2024, 12:30:39 PM
+ *  Last update: 30 Jul 2024, 12:34:26 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import path from "node:path";
 import { readFileSync } from "node:fs";
-import { DEBUG } from "../globals.js";
+import { DEBUG, ROOT_DATA_DIRECTORY } from "../globals.js";
 
-export const DATA_DIRECTORY = "Data";
-export const STRINGS_DIRECTORY = "Strings";
-
-const ROOT_DIRECTORY = "../../raw-data-escaped";
 // use import.meta.dirname because we don't have access to __dirname in modules
 const curDir = import.meta.dirname;
 
@@ -24,7 +20,7 @@ const curDir = import.meta.dirname;
 export function loadRawJson(dir, file) {
     // create full qualified path
     const filename = `${file}.json`;
-    const fullPath = path.join(curDir, ROOT_DIRECTORY, dir, filename);
+    const fullPath = path.join(curDir, ROOT_DATA_DIRECTORY, dir, filename);
     if (DEBUG) console.log(`Loading raw JSON from ${fullPath}`);
 
     try {
