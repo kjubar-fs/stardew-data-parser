@@ -1,11 +1,12 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 26 Jul 2024, 5:17:35 PM
- *  Last update: 29 Jul 2024, 1:35:14 PM
+ *  Last update: 30 Jul 2024, 12:30:39 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import path from "node:path";
 import { readFileSync } from "node:fs";
+import { DEBUG } from "../globals.js";
 
 export const DATA_DIRECTORY = "Data";
 export const STRINGS_DIRECTORY = "Strings";
@@ -24,7 +25,7 @@ export function loadRawJson(dir, file) {
     // create full qualified path
     const filename = `${file}.json`;
     const fullPath = path.join(curDir, ROOT_DIRECTORY, dir, filename);
-    console.debug(`Loading raw JSON from ${fullPath}`);
+    if (DEBUG) console.log(`Loading raw JSON from ${fullPath}`);
 
     try {
         // load file synchronously and parse to JSON

@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 29 Jul 2024, 6:04:26 PM
+ *  Last update: 30 Jul 2024, 12:30:09 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects } from "./src/data-model/classes.js";
@@ -9,17 +9,22 @@ import {
     DATA_DIRECTORY, STRINGS_DIRECTORY,
     loadRawJson
 } from "./src/files/read.js";
-
-const DEBUG = false;
+import { DEBUG } from "./src/globals.js";
 
 const objStrings = loadRawJson(STRINGS_DIRECTORY, "Objects");
 const newStrings = loadRawJson(STRINGS_DIRECTORY, "1_6_Strings");
+const csFileStrings = loadRawJson(STRINGS_DIRECTORY, "StringsFromCSFiles");
 
 const objectsParsed = [];
 const buffsParsed = [];
 
 processDataFile("Objects", processObject);
-console.log(objectsParsed[214]);
+
+processDataFile("Buffs", processBuff);
+
+///-----------
+/// Functions
+///-----------
 
 /**
  * Process a data file.
@@ -44,32 +49,32 @@ function processDataFile(filename, processCallback) {
  * @param {any} obj item data object
  */
 function processObject(id, obj) {
-    // pull out non-optional props
-    const nameInternal = obj.Name;
+    // get name (reused later)
     const name = resolveString(obj.DisplayName);
-    const description = resolveString(obj.Description);
-    const type = obj.Type.toLowerCase();
-    const category = obj.Category;
-    const spriteIndex = obj.SpriteIndex;
 
-    // create item
+    // create base item
     const item = new Item(
-        id, nameInternal, name, description,
-        type, category, spriteIndex
-    )
+        id,
+        obj.Name,
+        name,
+        resolveString(obj.Description),
+        obj.Type.toLowerCase(),
+        obj.Category,
+        obj.SpriteIndex
+    );
 
     // set optional props
-    if (!!obj.Price) {
+    if ("Price" in obj) {
         item.price = obj.Price;
     }
 
-    if (!!obj.Texture) {
+    if ("Texture" in obj) {
         item.texture = obj.Texture.split("\\").pop();
     }
 
     // handle edible items
-    const edibility = obj.Edibility;
-    if (!!edibility || edibility === 0) {
+    if ("Edibility" in obj) {
+        const edibility = obj.Edibility;
         const energy = Math.floor(edibility * 2.5);
         const health = Math.floor(edibility * 1.125);
         const effects = new ConsumptionEffects(energy, health);
@@ -90,7 +95,7 @@ function processObject(id, obj) {
                         `${name} Effects`,
                         buff.Duration,
                         0
-                    )
+                    );
                     newBuff.effects = buff.CustomAttributes;
 
                     // add new buff to storage and item
@@ -107,6 +112,37 @@ function processObject(id, obj) {
     // add new object to storage
     objectsParsed.push(item);
     if (DEBUG) console.log(item);
+}
+
+/**
+ * Process a buff from the Buffs data file.
+ * @param {string} id buff ID
+ * @param {any} obj buff data object
+ */
+function processBuff(id, obj) {
+    // create base buff
+    const buff = new Buff(
+        id,
+        resolveString(obj.DisplayName),
+        obj.Duration,
+        obj.IconSpriteIndex
+    );
+
+    // set optional props
+    if ("IsDebuff" in obj) {
+        buff.isDebuff = obj.IsDebuff;
+    }
+
+    if ("Effects" in obj) {
+        buff.effects = obj.Effects;
+    }
+
+    if ("Description" in obj) {
+        buff.description = obj.Description;
+    }
+
+    buffsParsed.push(buff);
+    if (DEBUG) console.log(buff);
 }
 
 /**
@@ -161,6 +197,9 @@ function resolveString(str) {
 
         case "1_6_Strings":
             return newStrings[strKey];
+        
+        case "StringsFromCSFiles":
+            return csFileStrings[strKey];
     
         default:
             return str;
