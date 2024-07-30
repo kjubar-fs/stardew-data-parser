@@ -111,6 +111,7 @@ The data structures output by this tool.
 - `unlockConditions` - array of condition strings for unlocking this recipe
     - `default` - unlocked by default
     - `f <NPC> <hearts>` - unlocked via mail at `hearts` heart level with `NPC`
+    - `s <skill> <level>` - unlocked at `level` of `skill`
     - `b <location> <price>_<item>` - purchased from `location` for `price`; if `item` is provided, it is the internal ID of the item used to purchase rather than gold
     - `e <NPC> <hearts>` - unlocked during `NPC`'s `hearts` heart event
     - `q <day> <season> <year>` - unlocked via Queen of Sauce on TV on `day` of `season` in `year`
