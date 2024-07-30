@@ -1,4 +1,8 @@
 ## TODOs and keep in mind
+### Data files to do
+- CookingRecipes.json
+- FruitTrees.json
+
 ### Manual data entry
 - boots sprite indices
 - animal production times
@@ -58,7 +62,7 @@ The data structures output by this tool.
 - `duration` - buff duration
 - `spriteIndex` - index of sprite in the sprite directory
 - `isDebuff` - `true` if the buff is actually a debuff
-- `effects` - a [string: value] object where the key is a stat name and the value is the adjustment amount
+- `effects` - a [string: number] object where the key is a stat name and the value is the adjustment amount
 
 #### Optional:
 - `description` - buff description (en-US)
@@ -84,6 +88,29 @@ The data structures output by this tool.
 - `maxHarvest` - maximum number harvested
 - `noWater` - `true` if this crop doesn't need to be watered
 - `scytheHarvest` - `true` if this crop is harvested with a scythe instead of by hand
+
+### Fruit Trees
+#### Non-optional:
+- `id` - internal tree ID
+- `seasons` - array of seasons this tree will produce fruit in (no trees produce in winter)
+    - `spring`
+    - `summer`
+    - `fall`
+- `fruitId` - internal ID of item harvested from this tree
+
+#### Optional:
+- none
+
+### Cooking Recipes
+#### Non-optional:
+- `name` - recipe name
+- `ingredients` - a [string: number] object where the key is an internal item ID and the value is the quantity
+- `yield` - internal ID of item crafted by this recipe
+- `unlockConditions` - condition string for unlocking the recipe, if it's standard
+    - see https://stardewvalleywiki.com/Modding:Recipe_data#Unlock_conditions
+
+#### Optional:
+- `specialUnlock` - array of special condition strings for unlocking this recipe (used for non-standard unlock conditions)
 
 ## To add later
 
