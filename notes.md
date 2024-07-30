@@ -109,6 +109,11 @@ The data structures output by this tool.
 - `ingredients` - a [string: number] object where the key is an internal item ID and the value is the quantity
 - `yield` - internal ID of item crafted by this recipe
 - `unlockConditions` - array of condition strings for unlocking this recipe
+    - `default` - unlocked by default
+    - `f <NPC> <hearts>` - unlocked via mail at `hearts` heart level with `NPC`
+    - `b <location> <price>_<item>` - purchased from `location` for `price`; if `item` is provided, it is the internal ID of the item used to purchase rather than gold
+    - `e <NPC> <hearts>` - unlocked during `NPC`'s `hearts` heart event
+    - `q <day> <season> <year>` - unlocked via Queen of Sauce on TV on `day` of `season` in `year`
 
 #### Optional:
 - none
@@ -125,4 +130,6 @@ Non-optional:
 - `spriteIndex` - integer index of the sprite; from raw data, this will be `MenuSpriteIndex` if it exists, otherwise it will be `SpriteIndex`
 
 Optional:
-- `attachments` - (fishing rods only) number of bait + tackle slots; 1 = only bait, 2+ = 1 bait + `num` tackle
+- `attachments` - an object with the number of bait and tackle slots (fishing rods only)
+    - `bait` - number of bait slots
+    - `tackle` - number of tackle slots
