@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 7:29:55 PM
+ *  Last update: 30 Jul 2024, 7:37:56 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree } from "./src/data-model/classes.js";
@@ -22,13 +22,16 @@ const cookingRecipesParsed = [];
 // processDataFile("Objects", processObject);
 // processDataFile("Buffs", processBuff);
 // processDataFile("Crops", processCrop);
-processDataFile("FruitTrees", processFruitTree);
-// processDataFile("CookingRecipes", processCookingRecipe);
+// processDataFile("FruitTrees", processFruitTree);
+processDataFile("CookingRecipes", processCookingRecipe);
+processDataFile("TV/CookingChannel", processTVRecipeSource);
+processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
 // writeObjectsToJson("objects", objectsParsed);
 // writeObjectsToJson("buffs", buffsParsed);
 // writeObjectsToJson("crops", cropsParsed);
-writeObjectsToJson("fruitTrees", fruitTreesParsed);
+// writeObjectsToJson("fruitTrees", fruitTreesParsed);
+writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
 
 ///-----------
 /// Functions
@@ -240,6 +243,24 @@ function processFruitTree(id, obj) {
  * @param {string} recipe recipe string
  */
 function processCookingRecipe(internalItemName, recipe) {
+    
+}
+
+/**
+ * Process an episode of Queen of Sauce source.
+ * @param {string} id channel program ID
+ * @param {string} showInfo TV show info
+ */
+function processTVRecipeSource(id, showInfo) {
+
+}
+
+/**
+ * Process a list of special recipe sources for a given recipe.
+ * @param {string} id recipe ID
+ * @param {string[]} sources array of sources for the recipe
+ */
+function processSpecialRecipeSource(id, sources) {
     
 }
 
