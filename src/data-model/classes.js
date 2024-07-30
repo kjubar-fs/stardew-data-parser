@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 30 Jul 2024, 2:37:56 PM
+ *  Last update: 30 Jul 2024, 2:44:37 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -67,6 +67,7 @@ export class Buff {
 
     /**
      * Create a new Buff.
+     * @param {string} id buff ID
      * @param {string} name display name (en-US)
      * @param {number} duration buff duration
      * @param {number} spriteIndex index of sprite in texture directory
@@ -93,4 +94,20 @@ export class Crop {
     maxHarvest;
     noWater;
     scytheHarvest;
+
+    /**
+     * Create a new Crop.
+     * @param {string} id crop ID
+     * @param {string[]} seasons growth seasons
+     * @param {number} growthDays number of days to grow fully
+     * @param {string} harvestItemId object ID of item given when harvesting
+     * @param {number} spriteIndex index of sprite in texture directory
+     */
+    constructor(id, seasons, growthDays, harvestItemId, spriteIndex) {
+        this.id = id;
+        this.seasons = seasons;
+        this.growthDays = growthDays;
+        this.harvestItemId = harvestItemId;
+        this.spriteIndex = spriteIndex;
+    }
 }
