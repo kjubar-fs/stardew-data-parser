@@ -1,0 +1,38 @@
+{
+	"Omelet": [
+		"b Stardrop_Saloon 100"
+	],
+	"Pizza": [
+		"b Stardrop_Saloon 150"
+	],
+	"Hashbrowns": [
+		"b Stardrop_Saloon 50"
+	],
+	"Pancakes": [
+		"b Stardrop_Saloon 100"
+	],
+	"Bread": [
+		"b Stardrop_Saloon 100"
+	],
+	"Cookies": [
+		"e Evelyn 4"
+	],
+	"Maki Roll": [
+		"b Stardrop_Saloon 300"
+	],
+	"Tortilla": [
+		"b Stardrop_Saloon 100"
+	],
+	"Triple Shot Espresso": [
+		"b Stardrop_Saloon 5000"
+	],
+	"Ginger Ale": [
+		"b Volcano_Dungeon_Dwarf_Shop 1000"
+	],
+	"Banana Pudding": [
+		"b Island_Trader 30_881"
+	],
+	"Tropical Curry": [
+		"b Ginger_Island_Resort 2000"
+	]
+}
