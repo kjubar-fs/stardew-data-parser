@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 2:39:36 PM
+ *  Last update: 30 Jul 2024, 2:54:43 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop } from "./src/data-model/classes.js";
@@ -17,13 +17,13 @@ const objectsParsed = [];
 const buffsParsed = [];
 const cropsParsed = [];
 
-// processDataFile("Objects", processObject);
-// processDataFile("Buffs", processBuff);
+processDataFile("Objects", processObject);
+processDataFile("Buffs", processBuff);
 processDataFile("Crops", processCrop);
-console.log(cropsParsed);
 
-// writeObjectsToJson("objects", objectsParsed);
-// writeObjectsToJson("buffs", buffsParsed);
+writeObjectsToJson("objects", objectsParsed);
+writeObjectsToJson("buffs", buffsParsed);
+writeObjectsToJson("crops", cropsParsed);
 
 ///-----------
 /// Functions
@@ -157,9 +157,54 @@ function processBuff(id, obj) {
 }
 
 function processCrop(id, obj) {
-    // if ("IsPaddyCrop" in obj) {
-    //     cropsParsed.push(obj);
-    // }
+    // create base crop
+    const crop = new Crop(
+        id,
+        obj.Seasons.map((season) => season.toLowerCase()),
+        obj.DaysInPhase.reduce((acc, val) => acc + val, 0),
+        obj.HarvestItemId,
+        obj.SpriteIndex
+    );
+
+    // set optional props
+    // IsRaised only appears if it's true
+    if ("IsRaised" in obj) {
+        crop.onTrellis = true;
+    }
+
+    // IsPaddyCrop only appears if it's true
+    if ("IsPaddyCrop" in obj) {
+        crop.paddyCrop = true;
+    }
+
+    if ("RegrowDays" in obj) {
+        crop.regrowthDays = obj.RegrowDays;
+    }
+
+    if ("ExtraHarvestChance" in obj) {
+        crop.extraHarvestChance = obj.ExtraHarvestChance;
+    }
+
+    if ("HarvestMinStack" in obj) {
+        crop.minHarvest = obj.HarvestMinStack;
+    }
+
+    if ("HarvestMaxStack" in obj) {
+        crop.maxHarvest = obj.HarvestMaxStack;
+    }
+
+    // NeedsWatering only appears if it's false
+    if ("NeedsWatering" in obj) {
+        crop.noWater = true;
+    }
+
+    // HarvestMethod only appears if it's "Scythe"
+    if ("HarvestMethod" in obj) {
+        crop.scytheHarvest = true;
+    }
+    
+    cropsParsed.push(crop);
+    if (DEBUG) console.log(crop);
 }
 
 /**
