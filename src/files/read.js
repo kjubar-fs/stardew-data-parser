@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 26 Jul 2024, 5:17:35 PM
- *  Last update: 30 Jul 2024, 12:34:26 PM
+ *  Last update: 30 Jul 2024, 1:17:50 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import path from "node:path";
@@ -14,7 +14,7 @@ const curDir = import.meta.dirname;
 /**
  * Load a raw JSON file as an object
  * @param {string} dir directory to load from
- * @param {file} file filename to load (no extension)
+ * @param {string} file filename to load (no extension)
  * @returns a JavaScript object formed from the loaded JSON
  */
 export function loadRawJson(dir, file) {

@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 26 Jul 2024, 5:17:38 PM
- *  Last update: 30 Jul 2024, 12:51:49 PM
+ *  Last update: 30 Jul 2024, 1:18:01 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import path from "node:path";
@@ -12,10 +12,10 @@ import { DEBUG, OUTPUT_DIRECTORY } from "../globals.js";
 const curDir = import.meta.dirname;
 
 /**
- * Save an array of JS object as a JSON file.
- * @param {string} dir directory to load from
- * @param {file} file filename to load (no extension)
- * @returns a JavaScript object formed from the loaded JSON
+ * Save an JS object(s) as a JSON file.
+ * @param {string} file filename to write (no extension)
+ * @param {any} objects data to write to file
+ * @returns true if successful, false if not
  */
 export function writeObjectsToJson(file, objects) {
     // create full qualified path
@@ -29,7 +29,7 @@ export function writeObjectsToJson(file, objects) {
         writeFileSync(fullPath, json);
         return true;
     } catch (err) {
-        // report any errors caught and return null
+        // report any errors caught and return false
         console.error(`Error saving to ${fullPath}:`, err);
         return false;
     }
