@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 2:54:43 PM
+ *  Last update: 30 Jul 2024, 3:02:28 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop } from "./src/data-model/classes.js";
@@ -16,14 +16,17 @@ const csFileStrings = loadRawJson(STRINGS_DIRECTORY, "StringsFromCSFiles");
 const objectsParsed = [];
 const buffsParsed = [];
 const cropsParsed = [];
+const fruitTreesParsed = [];
 
-processDataFile("Objects", processObject);
-processDataFile("Buffs", processBuff);
-processDataFile("Crops", processCrop);
+// processDataFile("Objects", processObject);
+// processDataFile("Buffs", processBuff);
+// processDataFile("Crops", processCrop);
+processDataFile("FruitTrees", processFruitTree);
+console.log(fruitTreesParsed);
 
-writeObjectsToJson("objects", objectsParsed);
-writeObjectsToJson("buffs", buffsParsed);
-writeObjectsToJson("crops", cropsParsed);
+// writeObjectsToJson("objects", objectsParsed);
+// writeObjectsToJson("buffs", buffsParsed);
+// writeObjectsToJson("crops", cropsParsed);
 
 ///-----------
 /// Functions
@@ -156,6 +159,11 @@ function processBuff(id, obj) {
     if (DEBUG) console.log(buff);
 }
 
+/**
+ * Process a crop from the Crops data file.
+ * @param {string} id crop ID
+ * @param {any} obj crop data object
+ */
 function processCrop(id, obj) {
     // create base crop
     const crop = new Crop(
@@ -205,6 +213,15 @@ function processCrop(id, obj) {
     
     cropsParsed.push(crop);
     if (DEBUG) console.log(crop);
+}
+
+/**
+ * Process a fruit tree from the FruitTrees data file.
+ * @param {string} id fruit tree ID
+ * @param {any} obj fruit tree data object
+ */
+function processFruitTree(id, obj) {
+    fruitTreesParsed.push(obj);
 }
 
 /**
