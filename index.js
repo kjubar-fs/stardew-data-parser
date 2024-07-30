@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 3:02:28 PM
+ *  Last update: 30 Jul 2024, 3:14:30 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop } from "./src/data-model/classes.js";
@@ -17,12 +17,13 @@ const objectsParsed = [];
 const buffsParsed = [];
 const cropsParsed = [];
 const fruitTreesParsed = [];
+const cookingRecipesParsed = [];
 
 // processDataFile("Objects", processObject);
 // processDataFile("Buffs", processBuff);
 // processDataFile("Crops", processCrop);
 processDataFile("FruitTrees", processFruitTree);
-console.log(fruitTreesParsed);
+processDataFile("CookingRecipes", processCookingRecipe);
 
 // writeObjectsToJson("objects", objectsParsed);
 // writeObjectsToJson("buffs", buffsParsed);
@@ -221,7 +222,16 @@ function processCrop(id, obj) {
  * @param {any} obj fruit tree data object
  */
 function processFruitTree(id, obj) {
-    fruitTreesParsed.push(obj);
+    
+}
+
+/**
+ * Process a cooking recipe from the CookingRecipes data file.
+ * @param {string} internalItemName internal name of item produced by the recipe
+ * @param {string} recipe recipe string
+ */
+function processCookingRecipe(internalItemName, recipe) {
+    
 }
 
 /**
@@ -233,6 +243,7 @@ function checkProps(objects) {
     // get a list of unique properties from all objects in the list
     const uniqueProps = new Set();
     const objVals = Object.values(objects);
+    if (typeof objVals[0] !== "object") return;
     for (const item of objVals) {
         for (const prop of Object.keys(item)) {
             uniqueProps.add(prop);
