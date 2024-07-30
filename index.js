@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 7:37:56 PM
+ *  Last update: 30 Jul 2024, 7:44:56 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree } from "./src/data-model/classes.js";
@@ -13,25 +13,25 @@ const objStrings = loadRawJson(STRINGS_DIRECTORY, "Objects");
 const newStrings = loadRawJson(STRINGS_DIRECTORY, "1_6_Strings");
 const csFileStrings = loadRawJson(STRINGS_DIRECTORY, "StringsFromCSFiles");
 
-const objectsParsed = [];
-const buffsParsed = [];
-const cropsParsed = [];
-const fruitTreesParsed = [];
-const cookingRecipesParsed = [];
+const objectsParsed = {};
+const buffsParsed = {};
+const cropsParsed = {};
+const fruitTreesParsed = {};
+const cookingRecipesParsed = {};
 
-// processDataFile("Objects", processObject);
-// processDataFile("Buffs", processBuff);
-// processDataFile("Crops", processCrop);
-// processDataFile("FruitTrees", processFruitTree);
-processDataFile("CookingRecipes", processCookingRecipe);
-processDataFile("TV/CookingChannel", processTVRecipeSource);
-processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
+processDataFile("Objects", processObject);
+processDataFile("Buffs", processBuff);
+processDataFile("Crops", processCrop);
+processDataFile("FruitTrees", processFruitTree);
+// processDataFile("CookingRecipes", processCookingRecipe);
+// processDataFile("TV/CookingChannel", processTVRecipeSource);
+// processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
-// writeObjectsToJson("objects", objectsParsed);
-// writeObjectsToJson("buffs", buffsParsed);
-// writeObjectsToJson("crops", cropsParsed);
-// writeObjectsToJson("fruitTrees", fruitTreesParsed);
-writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
+writeObjectsToJson("objects", objectsParsed);
+writeObjectsToJson("buffs", buffsParsed);
+writeObjectsToJson("crops", cropsParsed);
+writeObjectsToJson("fruitTrees", fruitTreesParsed);
+// writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
 
 ///-----------
 /// Functions
@@ -118,7 +118,7 @@ function processObject(id, obj) {
                     newBuff.effects = buff.CustomAttributes;
 
                     // add new buff to storage and item
-                    buffsParsed.push(newBuff);
+                    buffsParsed[newBuff.id] = newBuff;
                     effects.buffs.push(newBuff.id);
                     if (DEBUG) console.log(newBuff);
                 }
@@ -129,7 +129,7 @@ function processObject(id, obj) {
     }
 
     // add new object to storage
-    objectsParsed.push(item);
+    objectsParsed[id] = item;
     if (DEBUG) console.log(item);
 }
 
@@ -160,7 +160,7 @@ function processBuff(id, obj) {
         buff.description = resolveString(obj.Description);
     }
 
-    buffsParsed.push(buff);
+    buffsParsed[id] = buff;
     if (DEBUG) console.log(buff);
 }
 
@@ -216,7 +216,7 @@ function processCrop(id, obj) {
         crop.scytheHarvest = true;
     }
     
-    cropsParsed.push(crop);
+    cropsParsed[id] = crop;
     if (DEBUG) console.log(crop);
 }
 
@@ -233,7 +233,7 @@ function processFruitTree(id, obj) {
         obj.Fruit[0].ItemId.split(")").pop()    // split off possible "(O)" prefix
     );
 
-    fruitTreesParsed.push(tree);
+    fruitTreesParsed[id] = tree;
     if (DEBUG) console.log(tree);
 }
 
