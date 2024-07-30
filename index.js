@@ -1,11 +1,12 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 12:34:19 PM
+ *  Last update: 30 Jul 2024, 1:16:08 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects } from "./src/data-model/classes.js";
 import { loadRawJson } from "./src/files/read.js";
+import { writeObjectsToJson } from "./src/files/write.js";
 import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
 
 const objStrings = loadRawJson(STRINGS_DIRECTORY, "Objects");
@@ -16,8 +17,10 @@ const objectsParsed = [];
 const buffsParsed = [];
 
 processDataFile("Objects", processObject);
-
 processDataFile("Buffs", processBuff);
+
+writeObjectsToJson("objects", objectsParsed);
+writeObjectsToJson("buffs", buffsParsed);
 
 ///-----------
 /// Functions
@@ -72,8 +75,14 @@ function processObject(id, obj) {
     // handle edible items
     if ("Edibility" in obj) {
         const edibility = obj.Edibility;
-        const energy = Math.floor(edibility * 2.5);
-        const health = Math.floor(edibility * 1.125);
+        // round up for negative edibility
+        const energy = edibility >= 0 ?
+            Math.floor(edibility * 2.5) :
+            Math.ceil(edibility * 2.5);
+        // items with negative edibility don't damage health
+        const health = edibility >= 0 ?
+            Math.floor(edibility * 1.125) :
+            0;
         const effects = new ConsumptionEffects(energy, health);
 
         // handle possible buffs array
@@ -135,7 +144,7 @@ function processBuff(id, obj) {
     }
 
     if ("Description" in obj) {
-        buff.description = obj.Description;
+        buff.description = resolveString(obj.Description);
     }
 
     buffsParsed.push(buff);
