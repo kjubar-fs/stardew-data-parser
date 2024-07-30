@@ -64,9 +64,9 @@ The data structures output by this tool.
 - `duration` - buff duration
 - `spriteIndex` - index of sprite in the sprite directory
 - `isDebuff` - `true` if the buff is actually a debuff
-- `effects` - a [string: number] object where the key is a stat name and the value is the adjustment amount
 
 #### Optional:
+- `effects` - a [string: number] object where the key is a stat name and the value is the adjustment amount
 - `description` - buff description (en-US)
 
 ### Crops

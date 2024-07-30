@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 30 Jul 2024, 7:14:03 PM
+ *  Last update: 30 Jul 2024, 7:46:35 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -62,7 +62,7 @@ export class Buff {
     duration;
     spriteIndex;
     isDebuff = false;
-    effects = null;
+    effects;
     description;
 
     /**
