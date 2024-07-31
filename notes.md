@@ -3,8 +3,8 @@
 ### Data files to do
 - TV/CookingChannel.json
 - SpecialRecipeSources.json
-- CookingRecipes.json
-- FruitTrees.json
+- ~~CookingRecipes.json~~
+- ~~FruitTrees.json~~
 
 ### Manual data entry
 - boots sprite indices
