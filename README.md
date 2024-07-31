@@ -8,9 +8,9 @@
 
 ### Manual data entry
 - boots sprite indices
-- animal production times
+- ~~animal and artisan production times~~
 - fruit tree grow times
-- recipe sources (for non-friendship)
+- ~~recipe sources (for non-friendship)~~
 - remove lantern from tools
 - cactus fruit can only be planted outside on Ginger Island
 - ancient fruit can't be grown in planter pots
@@ -23,6 +23,7 @@
 - positive fractions are rounded down (`Math.floor`), negative fractions are rounded up (`Math.ceil`)
 - paddy crops' grow time is multiplied by 0.75 when irrigated
 - rice shoots give 2 rice 50% of the time at farming 0, and 3 rice 50% of the time at farming 10
+- dehydrating inedible fruit gives energy of `<base sell price> * 1.25` and health of `<base sell price> * 0.56`
 
 ## Data Structures
 The data structures output by this tool.
@@ -57,6 +58,9 @@ The data structures output by this tool.
     - `energy` - energy restored
     - `health` - health restored
     - `buffs` - (optional) array of IDs of buffs added
+- `productionTime` - an object with time and unit to produce (for animal products and artisan goods)
+    - `time` - time duration
+    - `unit` - `day`/`days` for animal products, `minutes` for artisan, `nights` for honey
 
 ### Buffs
 #### Non-optional:
