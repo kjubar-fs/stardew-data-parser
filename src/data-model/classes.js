@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 30 Jul 2024, 7:46:35 PM
+ *  Last update: 30 Jul 2024, 8:10:57 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -127,5 +127,24 @@ export class FruitTree {
         this.id = id;
         this.seasons = seasons;
         this.fruitId = fruitId;
+    }
+}
+
+export class CookingRecipe {
+    name;
+    ingredients;
+    recipeYield;
+    unlockSources = [];
+
+    /**
+     * Create a new CookingRecipe.
+     * @param {string} name recipe name
+     * @param {object} ingredients a [string: number] object containing ingredient IDs (or category IDs) and quantity
+     * @param {*} recipeYield internal ID of item crafted
+     */
+    constructor(name, ingredients, recipeYield) {
+        this.name = name;
+        this.ingredients = ingredients;
+        this.recipeYield = recipeYield;
     }
 }
