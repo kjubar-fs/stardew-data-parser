@@ -108,7 +108,7 @@ The data structures output by this tool.
 - `name` - recipe name
 - `ingredients` - a [string: number] object where the key is an internal item ID and the value is the quantity
 - `yield` - internal ID of item crafted by this recipe
-- `unlockConditions` - array of condition strings for unlocking this recipe
+- `unlockSources` - array of condition strings for unlocking this recipe
     - `default` - unlocked by default
     - `f <NPC> <hearts>` - unlocked via mail at `hearts` heart level with `NPC`
     - `s <skill> <level>` - unlocked at `level` of `skill`
