@@ -785,7 +785,11 @@
         "category": 0,
         "spriteIndex": 107,
         "texture": "springobjects",
-        "price": 350
+        "price": 350,
+        "productionTime": {
+            "time": 7,
+            "unit": "days"
+        }
     },
     "108": {
         "id": "108",
@@ -1621,6 +1625,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "176": {
@@ -1636,6 +1644,10 @@
         "onConsume": {
             "energy": 25,
             "health": 11
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "178": {
@@ -1662,6 +1674,10 @@
         "onConsume": {
             "energy": 25,
             "health": 11
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "182": {
@@ -1677,6 +1693,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "184": {
@@ -1692,6 +1712,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "186": {
@@ -1707,6 +1731,10 @@
         "onConsume": {
             "energy": 50,
             "health": 22
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "188": {
@@ -2633,6 +2661,10 @@
         "onConsume": {
             "energy": 12,
             "health": 5
+        },
+        "productionTime": {
+            "time": 1000,
+            "unit": "minutes"
         }
     },
     "248": {
@@ -3168,6 +3200,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 7,
+            "unit": "days"
         }
     },
     "290": {
@@ -3326,6 +3362,10 @@
             "buffs": [
                 "17"
             ]
+        },
+        "productionTime": {
+            "time": 2250,
+            "unit": "minutes"
         }
     },
     "304": {
@@ -3356,6 +3396,10 @@
         "onConsume": {
             "energy": -37,
             "health": 0
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "306": {
@@ -3371,6 +3415,10 @@
         "onConsume": {
             "energy": 50,
             "health": 22
+        },
+        "productionTime": {
+            "time": 180,
+            "unit": "minutes"
         }
     },
     "307": {
@@ -3386,6 +3434,10 @@
         "onConsume": {
             "energy": 75,
             "health": 33
+        },
+        "productionTime": {
+            "time": 180,
+            "unit": "minutes"
         }
     },
     "308": {
@@ -3401,6 +3453,10 @@
         "onConsume": {
             "energy": -75,
             "health": 0
+        },
+        "productionTime": {
+            "time": 180,
+            "unit": "minutes"
         }
     },
     "309": {
@@ -3709,7 +3765,11 @@
         "category": -26,
         "spriteIndex": 340,
         "texture": "springobjects",
-        "price": 100
+        "price": 100,
+        "productionTime": {
+            "time": 4,
+            "unit": "nights"
+        }
     },
     "341": {
         "id": "341",
@@ -3731,7 +3791,11 @@
         "category": -26,
         "spriteIndex": 128,
         "texture": "Objects_2",
-        "price": 100
+        "price": 100,
+        "productionTime": {
+            "time": 4000,
+            "unit": "minutes"
+        }
     },
     "343": {
         "id": "343",
@@ -3753,7 +3817,11 @@
         "category": -26,
         "spriteIndex": 130,
         "texture": "Objects_2",
-        "price": 160
+        "price": 160,
+        "productionTime": {
+            "time": 4000,
+            "unit": "minutes"
+        }
     },
     "346": {
         "id": "346",
@@ -3771,6 +3839,10 @@
             "buffs": [
                 "17"
             ]
+        },
+        "productionTime": {
+            "time": 1750,
+            "unit": "minutes"
         }
     },
     "347": {
@@ -3800,6 +3872,10 @@
             "buffs": [
                 "17"
             ]
+        },
+        "productionTime": {
+            "time": 10000,
+            "unit": "minutes"
         }
     },
     "349": {
@@ -3830,6 +3906,10 @@
         "onConsume": {
             "energy": 75,
             "health": 33
+        },
+        "productionTime": {
+            "time": 6000,
+            "unit": "minutes"
         }
     },
     "351": {
@@ -4054,6 +4134,10 @@
             "buffs": [
                 "Food_395"
             ]
+        },
+        "productionTime": {
+            "time": 120,
+            "unit": "minutes"
         }
     },
     "396": {
@@ -4378,6 +4462,10 @@
         "onConsume": {
             "energy": 12,
             "health": 5
+        },
+        "productionTime": {
+            "time": 600,
+            "unit": "minutes"
         }
     },
     "420": {
@@ -4453,6 +4541,10 @@
         "onConsume": {
             "energy": 125,
             "health": 56
+        },
+        "productionTime": {
+            "time": 200,
+            "unit": "minutes"
         }
     },
     "425": {
@@ -4479,6 +4571,10 @@
         "onConsume": {
             "energy": 125,
             "health": 56
+        },
+        "productionTime": {
+            "time": 200,
+            "unit": "minutes"
         }
     },
     "427": {
@@ -4501,7 +4597,11 @@
         "category": -26,
         "spriteIndex": 428,
         "texture": "springobjects",
-        "price": 470
+        "price": 470,
+        "productionTime": {
+            "time": 240,
+            "unit": "minutes"
+        }
     },
     "429": {
         "id": "429",
@@ -4527,6 +4627,10 @@
         "onConsume": {
             "energy": 12,
             "health": 5
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "431": {
@@ -4553,6 +4657,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 360,
+            "unit": "minutes"
         }
     },
     "433": {
@@ -4594,6 +4702,10 @@
         "onConsume": {
             "energy": 62,
             "health": 28
+        },
+        "productionTime": {
+            "time": 2,
+            "unit": "days"
         }
     },
     "437": {
@@ -4620,6 +4732,10 @@
         "onConsume": {
             "energy": 87,
             "health": 39
+        },
+        "productionTime": {
+            "time": 2,
+            "unit": "days"
         }
     },
     "439": {
@@ -4642,7 +4758,11 @@
         "category": -18,
         "spriteIndex": 440,
         "texture": "springobjects",
-        "price": 340
+        "price": 340,
+        "productionTime": {
+            "time": 3,
+            "unit": "days"
+        }
     },
     "441": {
         "id": "441",
@@ -4668,6 +4788,10 @@
         "onConsume": {
             "energy": 37,
             "health": 16
+        },
+        "productionTime": {
+            "time": 2,
+            "unit": "days"
         }
     },
     "444": {
@@ -4679,7 +4803,11 @@
         "category": -18,
         "spriteIndex": 444,
         "texture": "springobjects",
-        "price": 250
+        "price": 250,
+        "productionTime": {
+            "time": 2,
+            "unit": "days"
+        }
     },
     "445": {
         "id": "445",
@@ -4694,6 +4822,10 @@
         "onConsume": {
             "energy": 175,
             "health": 78
+        },
+        "productionTime": {
+            "time": 6000,
+            "unit": "minutes"
         }
     },
     "446": {
@@ -4705,7 +4837,11 @@
         "category": -18,
         "spriteIndex": 446,
         "texture": "springobjects",
-        "price": 565
+        "price": 565,
+        "productionTime": {
+            "time": 4,
+            "unit": "days"
+        }
     },
     "447": {
         "id": "447",
@@ -4720,6 +4856,10 @@
         "onConsume": {
             "energy": 100,
             "health": 45
+        },
+        "productionTime": {
+            "time": 4000,
+            "unit": "minutes"
         }
     },
     "449": {
@@ -4845,6 +4985,10 @@
             "buffs": [
                 "17"
             ]
+        },
+        "productionTime": {
+            "time": 600,
+            "unit": "minutes"
         }
     },
     "460": {
@@ -6283,6 +6427,10 @@
             "buffs": [
                 "Food_614"
             ]
+        },
+        "productionTime": {
+            "time": 180,
+            "unit": "minutes"
         }
     },
     "618": {
@@ -7750,6 +7898,10 @@
         "onConsume": {
             "energy": 125,
             "health": 56
+        },
+        "productionTime": {
+            "time": 180,
+            "unit": "minutes"
         }
     },
     "808": {
@@ -9094,6 +9246,10 @@
         "onConsume": {
             "energy": 25,
             "health": 11
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "929": {
@@ -9421,6 +9577,10 @@
         "onConsume": {
             "energy": 125,
             "health": 56
+        },
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
         }
     },
     "DriedFruit": {
@@ -9432,7 +9592,11 @@
         "category": -26,
         "spriteIndex": 64,
         "texture": "Objects_2",
-        "price": 25
+        "price": 25,
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
+        }
     },
     "DriedMushrooms": {
         "id": "DriedMushrooms",
@@ -9443,7 +9607,11 @@
         "category": -26,
         "spriteIndex": 66,
         "texture": "Objects_2",
-        "price": 25
+        "price": 25,
+        "productionTime": {
+            "time": 1,
+            "unit": "day"
+        }
     },
     "StardropTea": {
         "id": "StardropTea",
@@ -9624,7 +9792,11 @@
         "category": -26,
         "spriteIndex": 15,
         "texture": "Objects_2",
-        "price": 25
+        "price": 25,
+        "productionTime": {
+            "time": 50,
+            "unit": "minutes"
+        }
     },
     "PurpleBook": {
         "id": "PurpleBook",
