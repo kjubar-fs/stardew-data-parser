@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 11:19:10 AM
+ *  Last update: 31 Jul 2024, 11:56:47 AM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
@@ -267,8 +267,11 @@ function processCookingRecipe(recipeName, recipeString) {
     // parse source
     const source = recipePieces[3];                     // fourth field is source string
     // only add source if it's default, a friendship unlock, or a skill unlock
+    // skip "Luck" skill unlocks, as this is not a skill that can actually be leveled up
     // the rest will be parsed later from other files
-    if (source === "default" || source[0] === "f" || source[0] === "s") {
+    if (source === "default" ||
+        source[0] === "f" ||
+        (source[0] === "s" && source.split(" ")[1] !== "Luck")) {
         recipe.unlockSources.push(source);
     }
 
