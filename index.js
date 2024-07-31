@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 12:15:54 PM
+ *  Last update: 31 Jul 2024, 1:08:02 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
@@ -126,6 +126,256 @@ function processObject(id, obj) {
         }
 
         item.onConsume = effects;
+    }
+
+    // handle production time for necessary items
+    let production;
+    switch (id) {
+        //#region preserves jar
+        // pickles, jelly, aged roe
+        case "342":
+        case "344":
+        case "447":
+            production = {
+                time: 4000,
+                unit: "minutes"
+            };
+            break;
+        
+        // caviar
+        case "445":
+            production = {
+                time: 6000,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+        
+        //#region keg
+        // beer
+        case "346":
+            production = {
+                time: 1750,
+                unit: "minutes"
+            };
+            break;
+        
+        // vinegar, mead
+        case "419":
+        case "459":
+            production = {
+                time: 600,
+                unit: "minutes"
+            };
+            break;
+        
+        // coffee
+        case "395":
+            production = {
+                time: 120,
+                unit: "minutes"
+            };
+            break;
+        
+        // green tea
+        case "614":
+            production = {
+                time: 180,
+                unit: "minutes"
+            };
+            break;
+        
+        // juice
+        case "350":
+            production = {
+                time: 6000,
+                unit: "minutes"
+            };
+            break;
+        
+        // pale ale
+        case "303":
+            production = {
+                time: 2250,
+                unit: "minutes"
+            };
+            break;
+        
+        // wine
+        case "348":
+            production = {
+                time: 10000,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+
+        //#region mayonnaise machine
+        // mayo, duck mayo, void mayo, dino mayo
+        case "306":
+        case "307":
+        case "308":
+        case "807":
+            production = {
+                time: 180,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+
+        //#region cheese press
+        // cheese, goat cheese
+        case "424":
+        case "426":
+            production = {
+                time: 200,
+                unit: "minutes",
+            };
+            break;
+        //#endregion
+
+        //#region oil maker
+        // truffle oil
+        case "432":
+            production = {
+                time: 360,
+                unit: "minutes"
+            };
+            break;
+
+        // TODO: figure out oil having multiple sources
+        // oil (corn)
+        case "247":
+            production = {
+                time: 1000,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+
+        //#region loom
+        // cloth
+        case "428":
+            production = {
+                time: 240,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+
+        //#region bee house
+        // honey
+        case "340":
+            production = {
+                time: 4,
+                unit: "nights"
+            };
+            break;
+        //#endregion
+
+        //#region fish smoker
+        // smoked fish
+        case "SmokedFish":
+            production = {
+                time: 50,
+                unit: "minutes"
+            };
+            break;
+        //#endregion
+
+        //#region dehydrator
+        // dried mushrooms, dried fruit, raisins
+        case "DriedMushrooms":
+        case "DriedFruit":
+        case "Raisins":
+            production = {
+                time: 1,
+                unit: "day"
+            };
+            break;
+        //#endregion
+
+        //#region coop
+        // white egg, brown egg, large variants, gold egg, void egg
+        case "176":
+        case "180":
+        case "174":
+        case "182":
+        case "928":
+        case "305":
+            production = {
+                time: 1,
+                unit: "day"
+            };
+            break;
+        
+        // duck egg, duck feather
+        case "442":
+        case "444":
+            production = {
+                time: 2,
+                unit: "days"
+            };
+            break;
+        
+        // rabbit foot, omitting wool as sheep is faster
+        case "446":
+        // case "440":
+            production = {
+                time: 4,
+                unit: "days"
+            };
+            break;
+        
+        // dinosaur egg
+        case "107":
+            production = {
+                time: 7,
+                unit: "days"
+            };
+            break;
+        //#endregion
+
+        //#region barn
+        // milk, large milk, truffle
+        case "184":
+        case "186":
+        case "430":
+            production = {
+                time: 1,
+                unit: "day"
+            };
+            break;
+        
+        // goat milk, large goat milk
+        case "436":
+        case "438":
+            production = {
+                time: 2,
+                unit: "days"
+            };
+            break;
+        
+        // TODO: figure out wool having multiple sources
+        // wool (sheep)
+        case "440":
+            production = {
+                time: 3,
+                unit: "days"
+            };
+            break;
+        
+        // ostrich egg
+        case "289":
+            production = {
+                time: 7,
+                unit: "days"
+            };
+            break;
+        //#endregion
+    }
+    if (!!production) {
+        item.productionTime = production;
     }
 
     // add new object to storage
