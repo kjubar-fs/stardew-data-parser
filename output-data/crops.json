@@ -1,0 +1,605 @@
+{
+    "273": {
+        "id": "273",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "271",
+        "spriteIndex": 34,
+        "onTrellis": false,
+        "paddyCrop": true,
+        "extraHarvestChance": 0.1,
+        "scytheHarvest": true
+    },
+    "299": {
+        "id": "299",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "300",
+        "spriteIndex": 39,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "scytheHarvest": true
+    },
+    "301": {
+        "id": "301",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 10,
+        "harvestItemId": "398",
+        "spriteIndex": 38,
+        "onTrellis": true,
+        "paddyCrop": false,
+        "regrowthDays": 3
+    },
+    "302": {
+        "id": "302",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 11,
+        "harvestItemId": "304",
+        "spriteIndex": 37,
+        "onTrellis": true,
+        "paddyCrop": false,
+        "regrowthDays": 1
+    },
+    "347": {
+        "id": "347",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 24,
+        "harvestItemId": "417",
+        "spriteIndex": 32,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "425": {
+        "id": "425",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 12,
+        "harvestItemId": "595",
+        "spriteIndex": 31,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "427": {
+        "id": "427",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "591",
+        "spriteIndex": 26,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "429": {
+        "id": "429",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "597",
+        "spriteIndex": 27,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "431": {
+        "id": "431",
+        "seasons": [
+            "summer",
+            "fall"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "421",
+        "spriteIndex": 30,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "433": {
+        "id": "433",
+        "seasons": [
+            "spring",
+            "summer"
+        ],
+        "growthDays": 10,
+        "harvestItemId": "433",
+        "spriteIndex": 40,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 2,
+        "extraHarvestChance": 0.02,
+        "minHarvest": 4
+    },
+    "453": {
+        "id": "453",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "376",
+        "spriteIndex": 28,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "455": {
+        "id": "455",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "593",
+        "spriteIndex": 29,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "472": {
+        "id": "472",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 4,
+        "harvestItemId": "24",
+        "spriteIndex": 0,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "473": {
+        "id": "473",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 10,
+        "harvestItemId": "188",
+        "spriteIndex": 1,
+        "onTrellis": true,
+        "paddyCrop": false,
+        "regrowthDays": 3
+    },
+    "474": {
+        "id": "474",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 12,
+        "harvestItemId": "190",
+        "spriteIndex": 2,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "475": {
+        "id": "475",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "192",
+        "spriteIndex": 3,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "extraHarvestChance": 0.2
+    },
+    "476": {
+        "id": "476",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 4,
+        "harvestItemId": "248",
+        "spriteIndex": 4,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "477": {
+        "id": "477",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "250",
+        "spriteIndex": 5,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "scytheHarvest": true
+    },
+    "478": {
+        "id": "478",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 13,
+        "harvestItemId": "252",
+        "spriteIndex": 6,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "479": {
+        "id": "479",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 12,
+        "harvestItemId": "254",
+        "spriteIndex": 7,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "480": {
+        "id": "480",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 11,
+        "harvestItemId": "256",
+        "spriteIndex": 8,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 4,
+        "extraHarvestChance": 0.05
+    },
+    "481": {
+        "id": "481",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 13,
+        "harvestItemId": "258",
+        "spriteIndex": 9,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 4,
+        "extraHarvestChance": 0.02,
+        "minHarvest": 3,
+        "maxHarvest": 3
+    },
+    "482": {
+        "id": "482",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 5,
+        "harvestItemId": "260",
+        "spriteIndex": 10,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 3,
+        "extraHarvestChance": 0.03
+    },
+    "483": {
+        "id": "483",
+        "seasons": [
+            "summer",
+            "fall"
+        ],
+        "growthDays": 4,
+        "harvestItemId": "262",
+        "spriteIndex": 11,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "scytheHarvest": true
+    },
+    "484": {
+        "id": "484",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "264",
+        "spriteIndex": 12,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "485": {
+        "id": "485",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 9,
+        "harvestItemId": "266",
+        "spriteIndex": 13,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "486": {
+        "id": "486",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 13,
+        "harvestItemId": "268",
+        "spriteIndex": 14,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "487": {
+        "id": "487",
+        "seasons": [
+            "summer",
+            "fall"
+        ],
+        "growthDays": 14,
+        "harvestItemId": "270",
+        "spriteIndex": 15,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 4
+    },
+    "488": {
+        "id": "488",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 5,
+        "harvestItemId": "272",
+        "spriteIndex": 16,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 5,
+        "extraHarvestChance": 0.002
+    },
+    "489": {
+        "id": "489",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "274",
+        "spriteIndex": 17,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "490": {
+        "id": "490",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 13,
+        "harvestItemId": "276",
+        "spriteIndex": 18,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "491": {
+        "id": "491",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 4,
+        "harvestItemId": "278",
+        "spriteIndex": 19,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "492": {
+        "id": "492",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 10,
+        "harvestItemId": "280",
+        "spriteIndex": 20,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "493": {
+        "id": "493",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "282",
+        "spriteIndex": 21,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 5,
+        "extraHarvestChance": 0.1,
+        "minHarvest": 2
+    },
+    "494": {
+        "id": "494",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "284",
+        "spriteIndex": 22,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "495": {
+        "id": "495",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "16",
+        "spriteIndex": 23,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "496": {
+        "id": "496",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "396",
+        "spriteIndex": 23,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "497": {
+        "id": "497",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "404",
+        "spriteIndex": 23,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "498": {
+        "id": "498",
+        "seasons": [
+            "winter"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "412",
+        "spriteIndex": 23,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "499": {
+        "id": "499",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall"
+        ],
+        "growthDays": 28,
+        "harvestItemId": "454",
+        "spriteIndex": 24,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 7
+    },
+    "745": {
+        "id": "745",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "400",
+        "spriteIndex": 36,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 4,
+        "extraHarvestChance": 0.02
+    },
+    "802": {
+        "id": "802",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "growthDays": 12,
+        "harvestItemId": "90",
+        "spriteIndex": 41,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 3
+    },
+    "831": {
+        "id": "831",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 10,
+        "harvestItemId": "830",
+        "spriteIndex": 42,
+        "onTrellis": false,
+        "paddyCrop": true
+    },
+    "833": {
+        "id": "833",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 14,
+        "harvestItemId": "832",
+        "spriteIndex": 43,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 7
+    },
+    "885": {
+        "id": "885",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "771",
+        "spriteIndex": 44,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "extraHarvestChance": 0.01,
+        "minHarvest": 4,
+        "maxHarvest": 7,
+        "noWater": true,
+        "scytheHarvest": true
+    },
+    "890": {
+        "id": "890",
+        "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+        ],
+        "growthDays": 4,
+        "harvestItemId": "889",
+        "spriteIndex": 47,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "CarrotSeeds": {
+        "id": "CarrotSeeds",
+        "seasons": [
+            "spring"
+        ],
+        "growthDays": 3,
+        "harvestItemId": "Carrot",
+        "spriteIndex": 48,
+        "onTrellis": false,
+        "paddyCrop": false
+    },
+    "SummerSquashSeeds": {
+        "id": "SummerSquashSeeds",
+        "seasons": [
+            "summer"
+        ],
+        "growthDays": 6,
+        "harvestItemId": "SummerSquash",
+        "spriteIndex": 49,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 3
+    },
+    "BroccoliSeeds": {
+        "id": "BroccoliSeeds",
+        "seasons": [
+            "fall"
+        ],
+        "growthDays": 8,
+        "harvestItemId": "Broccoli",
+        "spriteIndex": 50,
+        "onTrellis": false,
+        "paddyCrop": false,
+        "regrowthDays": 4
+    },
+    "PowdermelonSeeds": {
+        "id": "PowdermelonSeeds",
+        "seasons": [
+            "winter"
+        ],
+        "growthDays": 7,
+        "harvestItemId": "Powdermelon",
+        "spriteIndex": 51,
+        "onTrellis": false,
+        "paddyCrop": false
+    }
+}

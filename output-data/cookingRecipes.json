@@ -1,0 +1,941 @@
+{
+    "Fried Egg": {
+        "name": "Fried Egg",
+        "ingredients": {
+            "-5": 1
+        },
+        "recipeYield": "194",
+        "unlockSources": [
+            "default"
+        ]
+    },
+    "Omelet": {
+        "name": "Omelet",
+        "ingredients": {
+            "-5": 1,
+            "-6": 1
+        },
+        "recipeYield": "195",
+        "unlockSources": [
+            "q 28 spring 1",
+            "b Stardrop_Saloon 100"
+        ]
+    },
+    "Salad": {
+        "name": "Salad",
+        "ingredients": {
+            "20": 1,
+            "22": 1,
+            "419": 1
+        },
+        "recipeYield": "196",
+        "unlockSources": [
+            "f Emily 3"
+        ]
+    },
+    "Cheese Cauli.": {
+        "name": "Cheese Cauli.",
+        "ingredients": {
+            "190": 1,
+            "424": 1
+        },
+        "recipeYield": "197",
+        "unlockSources": [
+            "f Pam 3"
+        ]
+    },
+    "Baked Fish": {
+        "name": "Baked Fish",
+        "ingredients": {
+            "132": 1,
+            "145": 1,
+            "246": 1
+        },
+        "recipeYield": "198",
+        "unlockSources": [
+            "q 7 summer 1"
+        ]
+    },
+    "Parsnip Soup": {
+        "name": "Parsnip Soup",
+        "ingredients": {
+            "24": 1,
+            "419": 1,
+            "-6": 1
+        },
+        "recipeYield": "199",
+        "unlockSources": [
+            "f Caroline 3"
+        ]
+    },
+    "Vegetable Stew": {
+        "name": "Vegetable Stew",
+        "ingredients": {
+            "256": 1,
+            "284": 1
+        },
+        "recipeYield": "200",
+        "unlockSources": [
+            "f Caroline 7"
+        ]
+    },
+    "Complete Breakfast": {
+        "name": "Complete Breakfast",
+        "ingredients": {
+            "194": 1,
+            "210": 1,
+            "211": 1,
+            "-6": 1
+        },
+        "recipeYield": "201",
+        "unlockSources": [
+            "q 21 spring 2"
+        ]
+    },
+    "Fried Calamari": {
+        "name": "Fried Calamari",
+        "ingredients": {
+            "151": 1,
+            "246": 1,
+            "247": 1
+        },
+        "recipeYield": "202",
+        "unlockSources": [
+            "f Jodi 3"
+        ]
+    },
+    "Strange Bun": {
+        "name": "Strange Bun",
+        "ingredients": {
+            "246": 1,
+            "308": 1,
+            "722": 1
+        },
+        "recipeYield": "203",
+        "unlockSources": [
+            "f Shane 7"
+        ]
+    },
+    "Lucky Lunch": {
+        "name": "Lucky Lunch",
+        "ingredients": {
+            "154": 1,
+            "229": 1,
+            "597": 1
+        },
+        "recipeYield": "204",
+        "unlockSources": [
+            "q 28 spring 2"
+        ]
+    },
+    "Fried Mushroom": {
+        "name": "Fried Mushroom",
+        "ingredients": {
+            "247": 1,
+            "257": 1,
+            "404": 1
+        },
+        "recipeYield": "205",
+        "unlockSources": [
+            "f Demetrius 3"
+        ]
+    },
+    "Pizza": {
+        "name": "Pizza",
+        "ingredients": {
+            "246": 1,
+            "256": 1,
+            "424": 1
+        },
+        "recipeYield": "206",
+        "unlockSources": [
+            "q 7 spring 2",
+            "b Stardrop_Saloon 150"
+        ]
+    },
+    "Bean Hotpot": {
+        "name": "Bean Hotpot",
+        "ingredients": {
+            "188": 2
+        },
+        "recipeYield": "207",
+        "unlockSources": [
+            "f Clint 7"
+        ]
+    },
+    "Glazed Yams": {
+        "name": "Glazed Yams",
+        "ingredients": {
+            "245": 1,
+            "280": 1
+        },
+        "recipeYield": "208",
+        "unlockSources": [
+            "q 21 fall 1"
+        ]
+    },
+    "Carp Surprise": {
+        "name": "Carp Surprise",
+        "ingredients": {
+            "142": 4
+        },
+        "recipeYield": "209",
+        "unlockSources": [
+            "q 7 summer 2"
+        ]
+    },
+    "Hashbrowns": {
+        "name": "Hashbrowns",
+        "ingredients": {
+            "192": 1,
+            "247": 1
+        },
+        "recipeYield": "210",
+        "unlockSources": [
+            "q 14 spring 2",
+            "b Stardrop_Saloon 50"
+        ]
+    },
+    "Pancakes": {
+        "name": "Pancakes",
+        "ingredients": {
+            "246": 1,
+            "-5": 1
+        },
+        "recipeYield": "211",
+        "unlockSources": [
+            "q 14 summer 1",
+            "b Stardrop_Saloon 100"
+        ]
+    },
+    "Salmon Dinner": {
+        "name": "Salmon Dinner",
+        "ingredients": {
+            "139": 1,
+            "250": 1,
+            "300": 1
+        },
+        "recipeYield": "212",
+        "unlockSources": [
+            "f Gus 3"
+        ]
+    },
+    "Fish Taco": {
+        "name": "Fish Taco",
+        "ingredients": {
+            "130": 1,
+            "229": 1,
+            "266": 1,
+            "306": 1
+        },
+        "recipeYield": "213",
+        "unlockSources": [
+            "f Linus 7"
+        ]
+    },
+    "Crispy Bass": {
+        "name": "Crispy Bass",
+        "ingredients": {
+            "136": 1,
+            "246": 1,
+            "247": 1
+        },
+        "recipeYield": "214",
+        "unlockSources": [
+            "f Kent 3"
+        ]
+    },
+    "Pepper Poppers": {
+        "name": "Pepper Poppers",
+        "ingredients": {
+            "260": 1,
+            "424": 1
+        },
+        "recipeYield": "215",
+        "unlockSources": [
+            "f Shane 3"
+        ]
+    },
+    "Bread": {
+        "name": "Bread",
+        "ingredients": {
+            "246": 1
+        },
+        "recipeYield": "216",
+        "unlockSources": [
+            "q 28 summer 1",
+            "b Stardrop_Saloon 100"
+        ]
+    },
+    "Tom Kha Soup": {
+        "name": "Tom Kha Soup",
+        "ingredients": {
+            "88": 1,
+            "404": 1,
+            "720": 1
+        },
+        "recipeYield": "218",
+        "unlockSources": [
+            "f Sandy 7"
+        ]
+    },
+    "Trout Soup": {
+        "name": "Trout Soup",
+        "ingredients": {
+            "138": 1,
+            "153": 1
+        },
+        "recipeYield": "219",
+        "unlockSources": [
+            "q 14 fall 1"
+        ]
+    },
+    "Chocolate Cake": {
+        "name": "Chocolate Cake",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "-5": 1
+        },
+        "recipeYield": "220",
+        "unlockSources": [
+            "q 14 winter 1"
+        ]
+    },
+    "Pink Cake": {
+        "name": "Pink Cake",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "254": 1,
+            "-5": 1
+        },
+        "recipeYield": "221",
+        "unlockSources": [
+            "q 21 summer 2"
+        ]
+    },
+    "Rhubarb Pie": {
+        "name": "Rhubarb Pie",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "252": 1
+        },
+        "recipeYield": "222",
+        "unlockSources": [
+            "f Marnie 7"
+        ]
+    },
+    "Cookies": {
+        "name": "Cookies",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "-5": 1
+        },
+        "recipeYield": "223",
+        "unlockSources": [
+            "e Evelyn 4"
+        ]
+    },
+    "Spaghetti": {
+        "name": "Spaghetti",
+        "ingredients": {
+            "246": 1,
+            "256": 1
+        },
+        "recipeYield": "224",
+        "unlockSources": [
+            "f Lewis 3"
+        ]
+    },
+    "Fried Eel": {
+        "name": "Fried Eel",
+        "ingredients": {
+            "148": 1,
+            "247": 1
+        },
+        "recipeYield": "225",
+        "unlockSources": [
+            "f George 3"
+        ]
+    },
+    "Spicy Eel": {
+        "name": "Spicy Eel",
+        "ingredients": {
+            "148": 1,
+            "260": 1
+        },
+        "recipeYield": "226",
+        "unlockSources": [
+            "f George 7"
+        ]
+    },
+    "Sashimi": {
+        "name": "Sashimi",
+        "ingredients": {
+            "-4": 1
+        },
+        "recipeYield": "227",
+        "unlockSources": [
+            "f Linus 3"
+        ]
+    },
+    "Maki Roll": {
+        "name": "Maki Roll",
+        "ingredients": {
+            "152": 1,
+            "423": 1,
+            "-4": 1
+        },
+        "recipeYield": "228",
+        "unlockSources": [
+            "q 21 summer 1",
+            "b Stardrop_Saloon 300"
+        ]
+    },
+    "Tortilla": {
+        "name": "Tortilla",
+        "ingredients": {
+            "270": 1
+        },
+        "recipeYield": "229",
+        "unlockSources": [
+            "q 7 fall 1",
+            "b Stardrop_Saloon 100"
+        ]
+    },
+    "Red Plate": {
+        "name": "Red Plate",
+        "ingredients": {
+            "264": 1,
+            "266": 1
+        },
+        "recipeYield": "230",
+        "unlockSources": [
+            "f Emily 7"
+        ]
+    },
+    "Eggplant Parm.": {
+        "name": "Eggplant Parm.",
+        "ingredients": {
+            "256": 1,
+            "272": 1
+        },
+        "recipeYield": "231",
+        "unlockSources": [
+            "f Lewis 7"
+        ]
+    },
+    "Rice Pudding": {
+        "name": "Rice Pudding",
+        "ingredients": {
+            "245": 1,
+            "423": 1,
+            "-6": 1
+        },
+        "recipeYield": "232",
+        "unlockSources": [
+            "f Evelyn 7"
+        ]
+    },
+    "Ice Cream": {
+        "name": "Ice Cream",
+        "ingredients": {
+            "245": 1,
+            "-6": 1
+        },
+        "recipeYield": "233",
+        "unlockSources": [
+            "f Jodi 7"
+        ]
+    },
+    "Blueberry Tart": {
+        "name": "Blueberry Tart",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "258": 1,
+            "-5": 1
+        },
+        "recipeYield": "234",
+        "unlockSources": [
+            "f Pierre 3"
+        ]
+    },
+    "Autumn's Bounty": {
+        "name": "Autumn's Bounty",
+        "ingredients": {
+            "276": 1,
+            "280": 1
+        },
+        "recipeYield": "235",
+        "unlockSources": [
+            "f Demetrius 7"
+        ]
+    },
+    "Pumpkin Soup": {
+        "name": "Pumpkin Soup",
+        "ingredients": {
+            "276": 1,
+            "-6": 1
+        },
+        "recipeYield": "236",
+        "unlockSources": [
+            "f Robin 7"
+        ]
+    },
+    "Super Meal": {
+        "name": "Super Meal",
+        "ingredients": {
+            "274": 1,
+            "278": 1,
+            "282": 1
+        },
+        "recipeYield": "237",
+        "unlockSources": [
+            "f Kent 7"
+        ]
+    },
+    "Cran. Sauce": {
+        "name": "Cran. Sauce",
+        "ingredients": {
+            "245": 1,
+            "282": 1
+        },
+        "recipeYield": "238",
+        "unlockSources": [
+            "f Gus 7"
+        ]
+    },
+    "Stuffing": {
+        "name": "Stuffing",
+        "ingredients": {
+            "216": 1,
+            "282": 1,
+            "408": 1
+        },
+        "recipeYield": "239",
+        "unlockSources": [
+            "f Pam 7"
+        ]
+    },
+    "Farmer's Lunch": {
+        "name": "Farmer's Lunch",
+        "ingredients": {
+            "24": 1,
+            "195": 1
+        },
+        "recipeYield": "240",
+        "unlockSources": [
+            "s Farming 3"
+        ]
+    },
+    "Survival Burger": {
+        "name": "Survival Burger",
+        "ingredients": {
+            "78": 1,
+            "216": 1,
+            "272": 1
+        },
+        "recipeYield": "241",
+        "unlockSources": [
+            "s Foraging 8"
+        ]
+    },
+    "Dish o' The Sea": {
+        "name": "Dish o' The Sea",
+        "ingredients": {
+            "131": 2,
+            "210": 1
+        },
+        "recipeYield": "242",
+        "unlockSources": [
+            "s Fishing 3"
+        ]
+    },
+    "Miner's Treat": {
+        "name": "Miner's Treat",
+        "ingredients": {
+            "78": 2,
+            "245": 1,
+            "-6": 1
+        },
+        "recipeYield": "243",
+        "unlockSources": [
+            "s Mining 3"
+        ]
+    },
+    "Roots Platter": {
+        "name": "Roots Platter",
+        "ingredients": {
+            "78": 1,
+            "412": 1
+        },
+        "recipeYield": "244",
+        "unlockSources": [
+            "s Combat 3"
+        ]
+    },
+    "Algae Soup": {
+        "name": "Algae Soup",
+        "ingredients": {
+            "153": 4
+        },
+        "recipeYield": "456",
+        "unlockSources": [
+            "f Clint 3"
+        ]
+    },
+    "Pale Broth": {
+        "name": "Pale Broth",
+        "ingredients": {
+            "157": 2
+        },
+        "recipeYield": "457",
+        "unlockSources": [
+            "f Marnie 3"
+        ]
+    },
+    "Plum Pudding": {
+        "name": "Plum Pudding",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "406": 2
+        },
+        "recipeYield": "604",
+        "unlockSources": [
+            "q 7 winter 1"
+        ]
+    },
+    "Artichoke Dip": {
+        "name": "Artichoke Dip",
+        "ingredients": {
+            "274": 1,
+            "-6": 1
+        },
+        "recipeYield": "605",
+        "unlockSources": [
+            "q 28 fall 1"
+        ]
+    },
+    "Stir Fry": {
+        "name": "Stir Fry",
+        "ingredients": {
+            "78": 1,
+            "247": 1,
+            "250": 1,
+            "404": 1
+        },
+        "recipeYield": "606",
+        "unlockSources": [
+            "q 7 spring 1"
+        ]
+    },
+    "Roasted Hazelnuts": {
+        "name": "Roasted Hazelnuts",
+        "ingredients": {
+            "408": 3
+        },
+        "recipeYield": "607",
+        "unlockSources": [
+            "q 28 summer 2"
+        ]
+    },
+    "Pumpkin Pie": {
+        "name": "Pumpkin Pie",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "276": 1,
+            "-6": 1
+        },
+        "recipeYield": "608",
+        "unlockSources": [
+            "q 21 winter 1"
+        ]
+    },
+    "Radish Salad": {
+        "name": "Radish Salad",
+        "ingredients": {
+            "247": 1,
+            "264": 1,
+            "419": 1
+        },
+        "recipeYield": "609",
+        "unlockSources": [
+            "q 21 spring 1"
+        ]
+    },
+    "Fruit Salad": {
+        "name": "Fruit Salad",
+        "ingredients": {
+            "254": 1,
+            "258": 1,
+            "634": 1
+        },
+        "recipeYield": "610",
+        "unlockSources": [
+            "q 7 fall 2"
+        ]
+    },
+    "Blackberry Cobbler": {
+        "name": "Blackberry Cobbler",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "410": 2
+        },
+        "recipeYield": "611",
+        "unlockSources": [
+            "q 14 fall 2"
+        ]
+    },
+    "Cranberry Candy": {
+        "name": "Cranberry Candy",
+        "ingredients": {
+            "245": 1,
+            "282": 1,
+            "613": 1
+        },
+        "recipeYield": "612",
+        "unlockSources": [
+            "q 28 winter 1"
+        ]
+    },
+    "Bruschetta": {
+        "name": "Bruschetta",
+        "ingredients": {
+            "216": 1,
+            "247": 1,
+            "256": 1
+        },
+        "recipeYield": "618",
+        "unlockSources": [
+            "q 21 winter 2"
+        ]
+    },
+    "Coleslaw": {
+        "name": "Coleslaw",
+        "ingredients": {
+            "266": 1,
+            "306": 1,
+            "419": 1
+        },
+        "recipeYield": "648",
+        "unlockSources": [
+            "q 14 spring 1"
+        ]
+    },
+    "Fiddlehead Risotto": {
+        "name": "Fiddlehead Risotto",
+        "ingredients": {
+            "247": 1,
+            "248": 1,
+            "259": 1
+        },
+        "recipeYield": "649",
+        "unlockSources": [
+            "q 28 fall 2"
+        ]
+    },
+    "Poppyseed Muffin": {
+        "name": "Poppyseed Muffin",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "376": 1
+        },
+        "recipeYield": "651",
+        "unlockSources": [
+            "q 7 winter 2"
+        ]
+    },
+    "Chowder": {
+        "name": "Chowder",
+        "ingredients": {
+            "372": 1,
+            "-6": 1
+        },
+        "recipeYield": "727",
+        "unlockSources": [
+            "f Willy 3"
+        ]
+    },
+    "Lobster Bisque": {
+        "name": "Lobster Bisque",
+        "ingredients": {
+            "715": 1,
+            "-6": 1
+        },
+        "recipeYield": "730",
+        "unlockSources": [
+            "f Willy 9",
+            "q 14 winter 2"
+        ]
+    },
+    "Fish Stew": {
+        "name": "Fish Stew",
+        "ingredients": {
+            "256": 1,
+            "716": 1,
+            "719": 1,
+            "722": 1
+        },
+        "recipeYield": "728",
+        "unlockSources": [
+            "f Willy 7"
+        ]
+    },
+    "Escargot": {
+        "name": "Escargot",
+        "ingredients": {
+            "248": 1,
+            "721": 1
+        },
+        "recipeYield": "729",
+        "unlockSources": [
+            "f Willy 5"
+        ]
+    },
+    "Maple Bar": {
+        "name": "Maple Bar",
+        "ingredients": {
+            "245": 1,
+            "246": 1,
+            "724": 1
+        },
+        "recipeYield": "731",
+        "unlockSources": [
+            "q 14 summer 2"
+        ]
+    },
+    "Crab Cakes": {
+        "name": "Crab Cakes",
+        "ingredients": {
+            "246": 1,
+            "247": 1,
+            "717": 1,
+            "-5": 1
+        },
+        "recipeYield": "732",
+        "unlockSources": [
+            "q 21 fall 2"
+        ]
+    },
+    "Triple Shot Espresso": {
+        "name": "Triple Shot Espresso",
+        "ingredients": {
+            "395": 3
+        },
+        "recipeYield": "253",
+        "unlockSources": [
+            "b Stardrop_Saloon 5000"
+        ]
+    },
+    "Shrimp Cocktail": {
+        "name": "Shrimp Cocktail",
+        "ingredients": {
+            "16": 1,
+            "256": 1,
+            "720": 1
+        },
+        "recipeYield": "733",
+        "unlockSources": [
+            "q 28 winter 2"
+        ]
+    },
+    "Seafoam Pudding": {
+        "name": "Seafoam Pudding",
+        "ingredients": {
+            "267": 1,
+            "269": 1,
+            "814": 1
+        },
+        "recipeYield": "265",
+        "unlockSources": [
+            "s Fishing 9"
+        ]
+    },
+    "Ginger Ale": {
+        "name": "Ginger Ale",
+        "ingredients": {
+            "245": 1,
+            "829": 3
+        },
+        "recipeYield": "903",
+        "unlockSources": [
+            "b Volcano_Dungeon_Dwarf_Shop 1000"
+        ]
+    },
+    "Banana Pudding": {
+        "name": "Banana Pudding",
+        "ingredients": {
+            "91": 1,
+            "245": 1,
+            "-6": 1
+        },
+        "recipeYield": "904",
+        "unlockSources": [
+            "b Island_Trader 30_881"
+        ]
+    },
+    "Mango Sticky Rice": {
+        "name": "Mango Sticky Rice",
+        "ingredients": {
+            "88": 1,
+            "423": 1,
+            "834": 1
+        },
+        "recipeYield": "905",
+        "unlockSources": [
+            "f Leo 7"
+        ]
+    },
+    "Poi": {
+        "name": "Poi",
+        "ingredients": {
+            "830": 4
+        },
+        "recipeYield": "906",
+        "unlockSources": [
+            "f Leo 3"
+        ]
+    },
+    "Tropical Curry": {
+        "name": "Tropical Curry",
+        "ingredients": {
+            "88": 1,
+            "260": 1,
+            "832": 1
+        },
+        "recipeYield": "907",
+        "unlockSources": [
+            "b Ginger_Island_Resort 2000"
+        ]
+    },
+    "Squid Ink Ravioli": {
+        "name": "Squid Ink Ravioli",
+        "ingredients": {
+            "246": 1,
+            "256": 1,
+            "814": 1
+        },
+        "recipeYield": "921",
+        "unlockSources": [
+            "s Combat 9"
+        ]
+    },
+    "Moss Soup": {
+        "name": "Moss Soup",
+        "ingredients": {
+            "Moss": 20
+        },
+        "recipeYield": "MossSoup",
+        "unlockSources": [
+            "s Foraging 3"
+        ]
+    }
+}

@@ -1,0 +1,738 @@
+{
+    "6": {
+        "id": "6",
+        "name": "Full",
+        "duration": 180000,
+        "spriteIndex": 6,
+        "isDebuff": false
+    },
+    "7": {
+        "id": "7",
+        "name": "Quenched",
+        "duration": 60000,
+        "spriteIndex": 7,
+        "isDebuff": false
+    },
+    "12": {
+        "id": "12",
+        "name": "Burnt",
+        "duration": 6000,
+        "spriteIndex": 12,
+        "isDebuff": true,
+        "effects": {
+            "Speed": -2,
+            "Defense": -3,
+            "Attack": -3
+        }
+    },
+    "13": {
+        "id": "13",
+        "name": "Slimed",
+        "duration": 2500,
+        "spriteIndex": 13,
+        "isDebuff": true,
+        "effects": {
+            "Speed": -4
+        }
+    },
+    "14": {
+        "id": "14",
+        "name": "Jinxed",
+        "duration": 8000,
+        "spriteIndex": 14,
+        "isDebuff": true,
+        "effects": {
+            "Defense": -8
+        }
+    },
+    "17": {
+        "id": "17",
+        "name": "Tipsy",
+        "duration": 30000,
+        "spriteIndex": 17,
+        "isDebuff": true,
+        "effects": {
+            "Speed": -1
+        }
+    },
+    "18": {
+        "id": "18",
+        "name": "Spooked",
+        "duration": 8000,
+        "spriteIndex": 18,
+        "isDebuff": true,
+        "effects": {
+            "Attack": -8
+        }
+    },
+    "19": {
+        "id": "19",
+        "name": "Frozen",
+        "duration": 2000,
+        "spriteIndex": 19,
+        "isDebuff": true,
+        "effects": {
+            "Speed": -8
+        }
+    },
+    "20": {
+        "id": "20",
+        "name": "Warrior Energy",
+        "duration": 5000,
+        "spriteIndex": 20,
+        "isDebuff": false,
+        "effects": {
+            "Attack": 10
+        }
+    },
+    "21": {
+        "id": "21",
+        "name": "Yoba's Blessing",
+        "duration": 5000,
+        "spriteIndex": 21,
+        "isDebuff": false,
+        "description": "Invincible"
+    },
+    "22": {
+        "id": "22",
+        "name": "Adrenaline Rush",
+        "duration": 3000,
+        "spriteIndex": 9,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 2
+        }
+    },
+    "23": {
+        "id": "23",
+        "name": "Oil of Garlic",
+        "duration": 600000,
+        "spriteIndex": 23,
+        "isDebuff": false,
+        "description": "Your skin exudes a pungent aroma"
+    },
+    "24": {
+        "id": "24",
+        "name": "Monster Musk",
+        "duration": 600000,
+        "spriteIndex": 24,
+        "isDebuff": false,
+        "description": "Your scent makes you irresistible to monsters"
+    },
+    "25": {
+        "id": "25",
+        "name": "Nauseated",
+        "duration": 120000,
+        "spriteIndex": 25,
+        "isDebuff": true,
+        "description": "Urgh... You're too sick to eat anything"
+    },
+    "26": {
+        "id": "26",
+        "name": "Darkness",
+        "duration": 5000,
+        "spriteIndex": 26,
+        "isDebuff": true,
+        "description": "Darkness clouds your vision, making it difficult to see"
+    },
+    "27": {
+        "id": "27",
+        "name": "Weakness",
+        "duration": 10000,
+        "spriteIndex": 27,
+        "isDebuff": true,
+        "effects": {
+            "Attack": -20
+        }
+    },
+    "28": {
+        "id": "28",
+        "name": "Squid Ink Ravioli",
+        "duration": 180000,
+        "spriteIndex": 28,
+        "isDebuff": false,
+        "description": "You are immune to debuffs."
+    },
+    "Food_167": {
+        "id": "Food_167",
+        "name": "Joja Cola Effects",
+        "duration": 30,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 1
+        }
+    },
+    "Food_201": {
+        "id": "Food_201",
+        "name": "Complete Breakfast Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 2,
+            "MaxStamina": 50
+        }
+    },
+    "Food_204": {
+        "id": "Food_204",
+        "name": "Lucky Lunch Effects",
+        "duration": 960,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 3
+        }
+    },
+    "Food_205": {
+        "id": "Food_205",
+        "name": "Fried Mushroom Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Attack": 2
+        }
+    },
+    "Food_207": {
+        "id": "Food_207",
+        "name": "Bean Hotpot Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MaxStamina": 30,
+            "MagneticRadius": 32
+        }
+    },
+    "Food_210": {
+        "id": "Food_210",
+        "name": "Hashbrowns Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 1
+        }
+    },
+    "Food_211": {
+        "id": "Food_211",
+        "name": "Pancakes Effects",
+        "duration": 960,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "ForagingLevel": 2
+        }
+    },
+    "Food_213": {
+        "id": "Food_213",
+        "name": "Fish Taco Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 2
+        }
+    },
+    "Food_214": {
+        "id": "Food_214",
+        "name": "Crispy Bass Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MagneticRadius": 64
+        }
+    },
+    "Food_215": {
+        "id": "Food_215",
+        "name": "Pepper Poppers Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 2,
+            "Speed": 1
+        }
+    },
+    "Food_218": {
+        "id": "Food_218",
+        "name": "Tom Kha Soup Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 2,
+            "MaxStamina": 30
+        }
+    },
+    "Food_219": {
+        "id": "Food_219",
+        "name": "Trout Soup Effects",
+        "duration": 400,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 1
+        }
+    },
+    "Food_225": {
+        "id": "Food_225",
+        "name": "Fried Eel Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 1
+        }
+    },
+    "Food_226": {
+        "id": "Food_226",
+        "name": "Spicy Eel Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 1,
+            "Speed": 1
+        }
+    },
+    "Food_230": {
+        "id": "Food_230",
+        "name": "Red Plate Effects",
+        "duration": 300,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MaxStamina": 50
+        }
+    },
+    "Food_231": {
+        "id": "Food_231",
+        "name": "Eggplant Parmesan Effects",
+        "duration": 400,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 1,
+            "Defense": 3
+        }
+    },
+    "Food_235": {
+        "id": "Food_235",
+        "name": "Autumn's Bounty Effects",
+        "duration": 660,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "ForagingLevel": 2,
+            "Defense": 2
+        }
+    },
+    "Food_236": {
+        "id": "Food_236",
+        "name": "Pumpkin Soup Effects",
+        "duration": 660,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 2,
+            "Defense": 2
+        }
+    },
+    "Food_237": {
+        "id": "Food_237",
+        "name": "Super Meal Effects",
+        "duration": 300,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MaxStamina": 40,
+            "Speed": 1
+        }
+    },
+    "Food_238": {
+        "id": "Food_238",
+        "name": "Cranberry Sauce Effects",
+        "duration": 300,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 2
+        }
+    },
+    "Food_239": {
+        "id": "Food_239",
+        "name": "Stuffing Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Defense": 2
+        }
+    },
+    "Food_240": {
+        "id": "Food_240",
+        "name": "Farmer's Lunch Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 3
+        }
+    },
+    "Food_241": {
+        "id": "Food_241",
+        "name": "Survival Burger Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "ForagingLevel": 3
+        }
+    },
+    "Food_242": {
+        "id": "Food_242",
+        "name": "Dish O' The Sea Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 3
+        }
+    },
+    "Food_243": {
+        "id": "Food_243",
+        "name": "Miner's Treat Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 3,
+            "MagneticRadius": 32
+        }
+    },
+    "Food_244": {
+        "id": "Food_244",
+        "name": "Roots Platter Effects",
+        "duration": 480,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Attack": 3
+        }
+    },
+    "Food_253": {
+        "id": "Food_253",
+        "name": "Triple Shot Espresso Effects",
+        "duration": 360,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 1
+        }
+    },
+    "Food_265": {
+        "id": "Food_265",
+        "name": "Seafoam Pudding Effects",
+        "duration": 300,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 4
+        }
+    },
+    "Food_279": {
+        "id": "Food_279",
+        "name": "Magic Rock Candy Effects",
+        "duration": 720,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 2,
+            "LuckLevel": 5,
+            "Speed": 1,
+            "Defense": 5,
+            "Attack": 5
+        }
+    },
+    "Food_395": {
+        "id": "Food_395",
+        "name": "Coffee Effects",
+        "duration": 120,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 1
+        }
+    },
+    "Food_614": {
+        "id": "Food_614",
+        "name": "Green Tea Effects",
+        "duration": 360,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MaxStamina": 30,
+            "Speed": 0.5
+        }
+    },
+    "Food_727": {
+        "id": "Food_727",
+        "name": "Chowder Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 1
+        }
+    },
+    "Food_728": {
+        "id": "Food_728",
+        "name": "Fish Stew Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 3
+        }
+    },
+    "Food_729": {
+        "id": "Food_729",
+        "name": "Escargot Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 2
+        }
+    },
+    "Food_730": {
+        "id": "Food_730",
+        "name": "Lobster Bisque Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 3,
+            "MaxStamina": 50
+        }
+    },
+    "Food_731": {
+        "id": "Food_731",
+        "name": "Maple Bar Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FarmingLevel": 1,
+            "FishingLevel": 1,
+            "MiningLevel": 1
+        }
+    },
+    "Food_732": {
+        "id": "Food_732",
+        "name": "Crab Cakes Effects",
+        "duration": 1440,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 1,
+            "Defense": 1
+        }
+    },
+    "Food_733": {
+        "id": "Food_733",
+        "name": "Shrimp Cocktail Effects",
+        "duration": 860,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 1,
+            "LuckLevel": 1
+        }
+    },
+    "Food_903": {
+        "id": "Food_903",
+        "name": "Ginger Ale Effects",
+        "duration": 430,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 1
+        }
+    },
+    "Food_904": {
+        "id": "Food_904",
+        "name": "Banana Pudding Effects",
+        "duration": 430,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 1,
+            "LuckLevel": 1,
+            "Defense": 1
+        }
+    },
+    "Food_905": {
+        "id": "Food_905",
+        "name": "Mango Sticky Rice Effects",
+        "duration": 430,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "Defense": 3
+        }
+    },
+    "Food_907": {
+        "id": "Food_907",
+        "name": "Tropical Curry Effects",
+        "duration": 430,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "ForagingLevel": 4
+        }
+    },
+    "Food_921": {
+        "id": "Food_921",
+        "name": "Squid Ink Ravioli Effects",
+        "duration": 400,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MiningLevel": 1
+        }
+    },
+    "Food_SeaJelly": {
+        "id": "Food_SeaJelly",
+        "name": "Sea Jelly Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "FishingLevel": 1
+        }
+    },
+    "Food_CaveJelly": {
+        "id": "Food_CaveJelly",
+        "name": "Cave Jelly Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 1
+        }
+    },
+    "Food_RiverJelly": {
+        "id": "Food_RiverJelly",
+        "name": "River Jelly Effects",
+        "duration": 600,
+        "spriteIndex": 0,
+        "isDebuff": false,
+        "effects": {
+            "MaxStamina": 30
+        }
+    },
+    "dwarfStatue_0": {
+        "id": "dwarfStatue_0",
+        "name": "Statue Of The Dwarf King",
+        "duration": -2,
+        "spriteIndex": 37,
+        "isDebuff": false,
+        "description": "+1 ore from ore nodes."
+    },
+    "dwarfStatue_1": {
+        "id": "dwarfStatue_1",
+        "name": "Statue Of The Dwarf King",
+        "duration": -2,
+        "spriteIndex": 38,
+        "isDebuff": false,
+        "description": "Greater chance to find ladders and shafts."
+    },
+    "dwarfStatue_2": {
+        "id": "dwarfStatue_2",
+        "name": "Statue Of The Dwarf King",
+        "duration": -2,
+        "spriteIndex": 39,
+        "isDebuff": false,
+        "description": "Greater chance to find coal."
+    },
+    "dwarfStatue_3": {
+        "id": "dwarfStatue_3",
+        "name": "Statue Of The Dwarf King",
+        "duration": -2,
+        "spriteIndex": 40,
+        "isDebuff": false,
+        "description": "Bombs cannot damage you."
+    },
+    "dwarfStatue_4": {
+        "id": "dwarfStatue_4",
+        "name": "Statue Of The Dwarf King",
+        "duration": -2,
+        "spriteIndex": 41,
+        "isDebuff": false,
+        "description": "Greater chance to find geodes."
+    },
+    "statue_of_blessings_0": {
+        "id": "statue_of_blessings_0",
+        "name": "Blessing Of Speed",
+        "duration": -2,
+        "spriteIndex": 30,
+        "isDebuff": false,
+        "effects": {
+            "Speed": 0.5
+        }
+    },
+    "statue_of_blessings_1": {
+        "id": "statue_of_blessings_1",
+        "name": "Blessing Of Luck",
+        "duration": -2,
+        "spriteIndex": 31,
+        "isDebuff": false,
+        "effects": {
+            "LuckLevel": 1
+        }
+    },
+    "statue_of_blessings_2": {
+        "id": "statue_of_blessings_2",
+        "name": "Blessing Of Energy",
+        "duration": -2,
+        "spriteIndex": 32,
+        "isDebuff": false,
+        "description": "You have infinite energy."
+    },
+    "statue_of_blessings_3": {
+        "id": "statue_of_blessings_3",
+        "name": "Blessing Of Waters",
+        "duration": -2,
+        "spriteIndex": 33,
+        "isDebuff": false,
+        "description": "The first three fish you hook today will be much easier. ({0} left)"
+    },
+    "statue_of_blessings_4": {
+        "id": "statue_of_blessings_4",
+        "name": "Blessing Of Friendship",
+        "duration": -2,
+        "spriteIndex": 34,
+        "isDebuff": false,
+        "description": "You gain extra friendship from speaking to people."
+    },
+    "statue_of_blessings_5": {
+        "id": "statue_of_blessings_5",
+        "name": "Blessing Of Fangs",
+        "duration": -2,
+        "spriteIndex": 35,
+        "isDebuff": false,
+        "description": "+10% critical strike chance"
+    },
+    "statue_of_blessings_6": {
+        "id": "statue_of_blessings_6",
+        "name": "Blessing Of The Butterfly",
+        "duration": -2,
+        "spriteIndex": 36,
+        "isDebuff": false,
+        "description": "A prismatic butterfly is waiting for you somewhere in the valley..."
+    }
+}

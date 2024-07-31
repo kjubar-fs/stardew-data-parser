@@ -1,0 +1,58 @@
+{
+    "69": {
+        "id": "69",
+        "seasons": [
+            "summer"
+        ],
+        "fruitId": "91"
+    },
+    "628": {
+        "id": "628",
+        "seasons": [
+            "spring"
+        ],
+        "fruitId": "638"
+    },
+    "629": {
+        "id": "629",
+        "seasons": [
+            "spring"
+        ],
+        "fruitId": "634"
+    },
+    "630": {
+        "id": "630",
+        "seasons": [
+            "summer"
+        ],
+        "fruitId": "635"
+    },
+    "631": {
+        "id": "631",
+        "seasons": [
+            "summer"
+        ],
+        "fruitId": "636"
+    },
+    "632": {
+        "id": "632",
+        "seasons": [
+            "fall"
+        ],
+        "fruitId": "637"
+    },
+    "633": {
+        "id": "633",
+        "seasons": [
+            "fall"
+        ],
+        "fruitId": "613"
+    },
+    "835": {
+        "id": "835",
+        "seasons": [
+            "summer"
+        ],
+        "fruitId": "834"
+    }
+}
