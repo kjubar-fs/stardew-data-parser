@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 12:00:30 PM
+ *  Last update: 31 Jul 2024, 12:02:52 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
@@ -249,7 +249,7 @@ function processCookingRecipe(recipeName, recipeString) {
     const ingredientList = recipePieces[0].split(" ");  // first field is ingredients, space-delimited
     const ingredients = {};
     for (let i = 0; i < ingredientList.length - 1; i += 2) {
-        ingredients[ingredientList[i]] = ingredientList[i + 1];
+        ingredients[ingredientList[i]] = Number(ingredientList[i + 1]);
     }
 
     // recipePieces[1] is unused
