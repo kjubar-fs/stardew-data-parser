@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 11:56:47 AM
+ *  Last update: 31 Jul 2024, 12:00:30 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
@@ -25,7 +25,7 @@ const cookingRecipesParsed = {};
 // processDataFile("FruitTrees", processFruitTree);
 processDataFile("CookingRecipes", processCookingRecipe);
 processDataFile("TV/CookingChannel", processTVRecipeSource);
-// processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
+processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
 // writeObjectsToJson("objects", objectsParsed);
 // writeObjectsToJson("buffs", buffsParsed);
@@ -323,11 +323,17 @@ function processTVRecipeSource(id, showInfo) {
 
 /**
  * Process a list of special recipe sources for a given recipe.
- * @param {string} id recipe ID
+ * @param {string} name recipe name
  * @param {string[]} sources array of sources for the recipe
  */
-function processSpecialRecipeSource(id, sources) {
-    
+function processSpecialRecipeSource(name, sources) {
+    if (DEBUG) console.log("Setting", sources, "into recipe", name);
+    if (name in cookingRecipesParsed) {
+        cookingRecipesParsed[name].unlockSources = [
+            ...cookingRecipesParsed[name].unlockSources,
+            ...sources
+        ];
+    }
 }
 
 /**
