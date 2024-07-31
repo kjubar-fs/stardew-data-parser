@@ -1,10 +1,10 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 7:44:56 PM
+ *  Last update: 30 Jul 2024, 8:13:31 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
-import { Item, Buff, ConsumptionEffects, Crop, FruitTree } from "./src/data-model/classes.js";
+import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
 import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
@@ -19,19 +19,19 @@ const cropsParsed = {};
 const fruitTreesParsed = {};
 const cookingRecipesParsed = {};
 
-processDataFile("Objects", processObject);
-processDataFile("Buffs", processBuff);
-processDataFile("Crops", processCrop);
-processDataFile("FruitTrees", processFruitTree);
-// processDataFile("CookingRecipes", processCookingRecipe);
-// processDataFile("TV/CookingChannel", processTVRecipeSource);
-// processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
+// processDataFile("Objects", processObject);
+// processDataFile("Buffs", processBuff);
+// processDataFile("Crops", processCrop);
+// processDataFile("FruitTrees", processFruitTree);
+processDataFile("CookingRecipes", processCookingRecipe);
+processDataFile("TV/CookingChannel", processTVRecipeSource);
+processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
-writeObjectsToJson("objects", objectsParsed);
-writeObjectsToJson("buffs", buffsParsed);
-writeObjectsToJson("crops", cropsParsed);
-writeObjectsToJson("fruitTrees", fruitTreesParsed);
-// writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
+// writeObjectsToJson("objects", objectsParsed);
+// writeObjectsToJson("buffs", buffsParsed);
+// writeObjectsToJson("crops", cropsParsed);
+// writeObjectsToJson("fruitTrees", fruitTreesParsed);
+writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
 
 ///-----------
 /// Functions
@@ -239,11 +239,40 @@ function processFruitTree(id, obj) {
 
 /**
  * Process a cooking recipe from the CookingRecipes data file.
- * @param {string} internalItemName internal name of item produced by the recipe
- * @param {string} recipe recipe string
+ * @param {string} recipeName recipe name
+ * @param {string} recipeString recipe string
  */
-function processCookingRecipe(internalItemName, recipe) {
-    
+function processCookingRecipe(recipeName, recipeString) {
+    const recipePieces = recipeString.split("/");             // slash-delimited
+
+    // parse ingredients
+    const ingredientList = recipePieces[0].split(" ");  // first field is ingredients, space-delimited
+    const ingredients = {};
+    for (let i = 0; i < ingredientList.length - 1; i += 2) {
+        ingredients[ingredientList[i]] = ingredientList[i + 1];
+    }
+
+    // recipePieces[1] is unused
+
+    // parse yield
+    const recipeYield = recipePieces[2];                // third field is ID of yielded item
+
+    // create CookingRecipe
+    const recipe = new CookingRecipe(
+        recipeName,
+        ingredients,
+        recipeYield
+    );
+
+    // parse source
+    const source = recipePieces[3];                     // fourth field is source string
+    // only add source if it's default, a friendship unlock, or a skill unlock
+    // the rest will be parsed later from other files
+    if (source === "default" || source[0] === "f" || source[0] === "s") {
+        recipe.unlockSources.push(source);
+    }
+
+    cookingRecipesParsed[recipeName] = recipe;
 }
 
 /**
