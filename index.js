@@ -1,13 +1,13 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 30 Jul 2024, 8:13:31 PM
+ *  Last update: 31 Jul 2024, 11:19:10 AM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
-import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY } from "./src/globals.js";
+import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY, SEASONS } from "./src/globals.js";
 
 const objStrings = loadRawJson(STRINGS_DIRECTORY, "Objects");
 const newStrings = loadRawJson(STRINGS_DIRECTORY, "1_6_Strings");
@@ -25,7 +25,7 @@ const cookingRecipesParsed = {};
 // processDataFile("FruitTrees", processFruitTree);
 processDataFile("CookingRecipes", processCookingRecipe);
 processDataFile("TV/CookingChannel", processTVRecipeSource);
-processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
+// processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
 // writeObjectsToJson("objects", objectsParsed);
 // writeObjectsToJson("buffs", buffsParsed);
@@ -272,6 +272,7 @@ function processCookingRecipe(recipeName, recipeString) {
         recipe.unlockSources.push(source);
     }
 
+    if (DEBUG) console.log(recipe);
     cookingRecipesParsed[recipeName] = recipe;
 }
 
@@ -281,7 +282,40 @@ function processCookingRecipe(recipeName, recipeString) {
  * @param {string} showInfo TV show info
  */
 function processTVRecipeSource(id, showInfo) {
+    // calculate day of season
+    // start by getting Sunday number 1-4
+    // subtract 1, mod 4, and add 1 to get 1-4
+    // since episode IDs start at 1, not 0
+    const numSunday = ((id - 1) % 4) + 1;
+    // now multiply by 7 to get day of season
+    const day = numSunday * 7;
 
+    // calculate season
+    // start by subtracting 1 then dividing by 4 (number of Sundays in a season)
+    // and floor to create season buckets
+    const seasonBucket = Math.floor((id - 1) / 4);
+    // then mod 4 and add 1 to get 1-4
+    const seasonNum = (seasonBucket % 4) + 1;
+    // and finally map to season name
+    const season = SEASONS[seasonNum];
+
+    // calculate year
+    // start by subtracting 1 then dividing by 16 (number of Sundays in a year)
+    // and floor to create year buckets
+    const yearBucket = Math.floor((id - 1) / 16);
+    // then mod 16 and add 1 to get year
+    const year = (yearBucket % 16) + 1;
+
+    // parse recipe name, always first field in the show info
+    const recipeName = showInfo.split("/")[0];
+
+    // assemble unlock string and set into recipe
+    const unlock = `q ${day} ${season} ${year}`;
+    
+    if (DEBUG) console.log(`Setting ${unlock} into recipe ${recipeName}`);
+    if (recipeName in cookingRecipesParsed) {
+        cookingRecipesParsed[recipeName].unlockSources.push(unlock);
+    }
 }
 
 /**
