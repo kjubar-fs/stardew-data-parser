@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 12:02:52 PM
+ *  Last update: 31 Jul 2024, 12:15:54 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
@@ -19,18 +19,18 @@ const cropsParsed = {};
 const fruitTreesParsed = {};
 const cookingRecipesParsed = {};
 
-// processDataFile("Objects", processObject);
-// processDataFile("Buffs", processBuff);
-// processDataFile("Crops", processCrop);
-// processDataFile("FruitTrees", processFruitTree);
+processDataFile("Objects", processObject);
+processDataFile("Buffs", processBuff);
+processDataFile("Crops", processCrop);
+processDataFile("FruitTrees", processFruitTree);
 processDataFile("CookingRecipes", processCookingRecipe);
 processDataFile("TV/CookingChannel", processTVRecipeSource);
 processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
 
-// writeObjectsToJson("objects", objectsParsed);
-// writeObjectsToJson("buffs", buffsParsed);
-// writeObjectsToJson("crops", cropsParsed);
-// writeObjectsToJson("fruitTrees", fruitTreesParsed);
+writeObjectsToJson("objects", objectsParsed);
+writeObjectsToJson("buffs", buffsParsed);
+writeObjectsToJson("crops", cropsParsed);
+writeObjectsToJson("fruitTrees", fruitTreesParsed);
 writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
 
 ///-----------
