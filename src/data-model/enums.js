@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 1 Sep 2024, 6:42:25 PM
- *  Last update: 1 Sep 2024, 6:59:28 PM
+ *  Last update: 1 Sep 2024, 7:11:43 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export const PROD_SRCS = Object.freeze({
@@ -46,8 +46,7 @@ export const PROD_SRCS = Object.freeze({
 });
 
 export const PROD_UNITS = Object.freeze({
-    mins: "minutes",
-    nights: "nights",
+    min: "minutes",
+    night: "nights",
     day: "day",
-    days: "days",
 });
