@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 1 Sep 2024, 6:42:25 PM
- *  Last update: 1 Sep 2024, 6:53:17 PM
+ *  Last update: 1 Sep 2024, 6:59:28 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export const PROD_SRCS = Object.freeze({
@@ -16,6 +16,13 @@ export const PROD_SRCS = Object.freeze({
         bee: "bee house",
         smoker: "fish smoker",
         dehydrate: "dehydrator",
+    },
+
+    // crops
+    crops: {
+        corn: "270",
+        sunflowerSeed: "431",
+        sunflower: "421",
     },
 
     // animals
