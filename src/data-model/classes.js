@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 30 Jul 2024, 8:10:57 PM
+ *  Last update: 1 Sep 2024, 7:35:55 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -140,11 +140,29 @@ export class CookingRecipe {
      * Create a new CookingRecipe.
      * @param {string} name recipe name
      * @param {object} ingredients a [string: number] object containing ingredient IDs (or category IDs) and quantity
-     * @param {*} recipeYield internal ID of item crafted
+     * @param {string} recipeYield internal ID of item crafted
      */
     constructor(name, ingredients, recipeYield) {
         this.name = name;
         this.ingredients = ingredients;
         this.recipeYield = recipeYield;
+    }
+}
+
+export class ProductionSource {
+    source;
+    time;
+    unit;
+
+    /**
+     * Create a new ProductionSource.
+     * @param {string} source production source, enum value from PROD_SRCS
+     * @param {number} time time to produce
+     * @param {string} unit production time unit, enum value from PROD_UNITS
+     */
+    constructor(source, time, unit) {
+        this.source = source;
+        this.time = time;
+        this.unit = unit;
     }
 }
