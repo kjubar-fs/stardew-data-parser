@@ -786,10 +786,13 @@
         "spriteIndex": 107,
         "texture": "springobjects",
         "price": 350,
-        "productionTime": {
-            "time": 7,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "dinosaur",
+                "time": 7,
+                "unit": "day"
+            }
+        ]
     },
     "108": {
         "id": "108",
@@ -1626,10 +1629,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "white chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "176": {
         "id": "176",
@@ -1645,10 +1651,13 @@
             "energy": 25,
             "health": 11
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "white chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "178": {
         "id": "178",
@@ -1675,10 +1684,13 @@
             "energy": 25,
             "health": 11
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "brown chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "182": {
         "id": "182",
@@ -1694,10 +1706,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "brown chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "184": {
         "id": "184",
@@ -1713,10 +1728,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "cow",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "186": {
         "id": "186",
@@ -1732,10 +1750,13 @@
             "energy": 50,
             "health": 22
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "cow",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "188": {
         "id": "188",
@@ -2662,10 +2683,23 @@
             "energy": 12,
             "health": 5
         },
-        "productionTime": {
-            "time": 1000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "270",
+                "time": 1000,
+                "unit": "minute"
+            },
+            {
+                "source": "431",
+                "time": 3200,
+                "unit": "minute"
+            },
+            {
+                "source": "421",
+                "time": 60,
+                "unit": "minute"
+            }
+        ]
     },
     "248": {
         "id": "248",
@@ -3201,10 +3235,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 7,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "ostrich",
+                "time": 7,
+                "unit": "day"
+            }
+        ]
     },
     "290": {
         "id": "290",
@@ -3363,10 +3400,13 @@
                 "17"
             ]
         },
-        "productionTime": {
-            "time": 2250,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 2250,
+                "unit": "minute"
+            }
+        ]
     },
     "304": {
         "id": "304",
@@ -3397,10 +3437,13 @@
             "energy": -37,
             "health": 0
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "void chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "306": {
         "id": "306",
@@ -3416,10 +3459,13 @@
             "energy": 50,
             "health": 22
         },
-        "productionTime": {
-            "time": 180,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "mayonnaise machine",
+                "time": 180,
+                "unit": "minute"
+            }
+        ]
     },
     "307": {
         "id": "307",
@@ -3435,10 +3481,13 @@
             "energy": 75,
             "health": 33
         },
-        "productionTime": {
-            "time": 180,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "mayonnaise machine",
+                "time": 180,
+                "unit": "minute"
+            }
+        ]
     },
     "308": {
         "id": "308",
@@ -3454,10 +3503,13 @@
             "energy": -75,
             "health": 0
         },
-        "productionTime": {
-            "time": 180,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "mayonnaise machine",
+                "time": 180,
+                "unit": "minute"
+            }
+        ]
     },
     "309": {
         "id": "309",
@@ -3766,10 +3818,13 @@
         "spriteIndex": 340,
         "texture": "springobjects",
         "price": 100,
-        "productionTime": {
-            "time": 4,
-            "unit": "nights"
-        }
+        "productionTime": [
+            {
+                "source": "bee house",
+                "time": 4,
+                "unit": "night"
+            }
+        ]
     },
     "341": {
         "id": "341",
@@ -3792,10 +3847,13 @@
         "spriteIndex": 128,
         "texture": "Objects_2",
         "price": 100,
-        "productionTime": {
-            "time": 4000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "preserves jar",
+                "time": 4000,
+                "unit": "minute"
+            }
+        ]
     },
     "343": {
         "id": "343",
@@ -3818,10 +3876,13 @@
         "spriteIndex": 130,
         "texture": "Objects_2",
         "price": 160,
-        "productionTime": {
-            "time": 4000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "preserves jar",
+                "time": 4000,
+                "unit": "minute"
+            }
+        ]
     },
     "346": {
         "id": "346",
@@ -3840,10 +3901,13 @@
                 "17"
             ]
         },
-        "productionTime": {
-            "time": 1750,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 1750,
+                "unit": "minute"
+            }
+        ]
     },
     "347": {
         "id": "347",
@@ -3873,10 +3937,13 @@
                 "17"
             ]
         },
-        "productionTime": {
-            "time": 10000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 10000,
+                "unit": "minute"
+            }
+        ]
     },
     "349": {
         "id": "349",
@@ -3907,10 +3974,13 @@
             "energy": 75,
             "health": 33
         },
-        "productionTime": {
-            "time": 6000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 6000,
+                "unit": "minute"
+            }
+        ]
     },
     "351": {
         "id": "351",
@@ -4135,10 +4205,13 @@
                 "Food_395"
             ]
         },
-        "productionTime": {
-            "time": 120,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 120,
+                "unit": "minute"
+            }
+        ]
     },
     "396": {
         "id": "396",
@@ -4463,10 +4536,13 @@
             "energy": 12,
             "health": 5
         },
-        "productionTime": {
-            "time": 600,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 600,
+                "unit": "minute"
+            }
+        ]
     },
     "420": {
         "id": "420",
@@ -4542,10 +4618,13 @@
             "energy": 125,
             "health": 56
         },
-        "productionTime": {
-            "time": 200,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "cheese press",
+                "time": 200,
+                "unit": "minute"
+            }
+        ]
     },
     "425": {
         "id": "425",
@@ -4572,10 +4651,13 @@
             "energy": 125,
             "health": 56
         },
-        "productionTime": {
-            "time": 200,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "cheese press",
+                "time": 200,
+                "unit": "minute"
+            }
+        ]
     },
     "427": {
         "id": "427",
@@ -4598,10 +4680,13 @@
         "spriteIndex": 428,
         "texture": "springobjects",
         "price": 470,
-        "productionTime": {
-            "time": 240,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "loom",
+                "time": 240,
+                "unit": "minute"
+            }
+        ]
     },
     "429": {
         "id": "429",
@@ -4628,10 +4713,13 @@
             "energy": 12,
             "health": 5
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "pig",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "431": {
         "id": "431",
@@ -4658,10 +4746,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 360,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "oil maker",
+                "time": 360,
+                "unit": "minute"
+            }
+        ]
     },
     "433": {
         "id": "433",
@@ -4703,10 +4794,13 @@
             "energy": 62,
             "health": 28
         },
-        "productionTime": {
-            "time": 2,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "goat",
+                "time": 2,
+                "unit": "day"
+            }
+        ]
     },
     "437": {
         "id": "437",
@@ -4733,10 +4827,13 @@
             "energy": 87,
             "health": 39
         },
-        "productionTime": {
-            "time": 2,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "goat",
+                "time": 2,
+                "unit": "day"
+            }
+        ]
     },
     "439": {
         "id": "439",
@@ -4759,10 +4856,18 @@
         "spriteIndex": 440,
         "texture": "springobjects",
         "price": 340,
-        "productionTime": {
-            "time": 3,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "sheep",
+                "time": 3,
+                "unit": "day"
+            },
+            {
+                "source": "rabbit",
+                "time": 4,
+                "unit": "day"
+            }
+        ]
     },
     "441": {
         "id": "441",
@@ -4789,10 +4894,13 @@
             "energy": 37,
             "health": 16
         },
-        "productionTime": {
-            "time": 2,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "duck",
+                "time": 2,
+                "unit": "day"
+            }
+        ]
     },
     "444": {
         "id": "444",
@@ -4804,10 +4912,13 @@
         "spriteIndex": 444,
         "texture": "springobjects",
         "price": 250,
-        "productionTime": {
-            "time": 2,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "duck",
+                "time": 2,
+                "unit": "day"
+            }
+        ]
     },
     "445": {
         "id": "445",
@@ -4823,10 +4934,13 @@
             "energy": 175,
             "health": 78
         },
-        "productionTime": {
-            "time": 6000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "preserves jar",
+                "time": 6000,
+                "unit": "minute"
+            }
+        ]
     },
     "446": {
         "id": "446",
@@ -4838,10 +4952,13 @@
         "spriteIndex": 446,
         "texture": "springobjects",
         "price": 565,
-        "productionTime": {
-            "time": 4,
-            "unit": "days"
-        }
+        "productionTime": [
+            {
+                "source": "rabbit",
+                "time": 4,
+                "unit": "day"
+            }
+        ]
     },
     "447": {
         "id": "447",
@@ -4857,10 +4974,13 @@
             "energy": 100,
             "health": 45
         },
-        "productionTime": {
-            "time": 4000,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "preserves jar",
+                "time": 4000,
+                "unit": "minute"
+            }
+        ]
     },
     "449": {
         "id": "449",
@@ -4986,10 +5106,13 @@
                 "17"
             ]
         },
-        "productionTime": {
-            "time": 600,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 600,
+                "unit": "minute"
+            }
+        ]
     },
     "460": {
         "id": "460",
@@ -6428,10 +6551,13 @@
                 "Food_614"
             ]
         },
-        "productionTime": {
-            "time": 180,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "keg",
+                "time": 180,
+                "unit": "minute"
+            }
+        ]
     },
     "618": {
         "id": "618",
@@ -7899,10 +8025,13 @@
             "energy": 125,
             "health": 56
         },
-        "productionTime": {
-            "time": 180,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "mayonnaise machine",
+                "time": 180,
+                "unit": "minute"
+            }
+        ]
     },
     "808": {
         "id": "808",
@@ -9247,10 +9376,13 @@
             "energy": 25,
             "health": 11
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "golden chicken",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "929": {
         "id": "929",
@@ -9578,10 +9710,13 @@
             "energy": 125,
             "health": 56
         },
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "dehydrator",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "DriedFruit": {
         "id": "DriedFruit",
@@ -9593,10 +9728,13 @@
         "spriteIndex": 64,
         "texture": "Objects_2",
         "price": 25,
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "dehydrator",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "DriedMushrooms": {
         "id": "DriedMushrooms",
@@ -9608,10 +9746,13 @@
         "spriteIndex": 66,
         "texture": "Objects_2",
         "price": 25,
-        "productionTime": {
-            "time": 1,
-            "unit": "day"
-        }
+        "productionTime": [
+            {
+                "source": "dehydrator",
+                "time": 1,
+                "unit": "day"
+            }
+        ]
     },
     "StardropTea": {
         "id": "StardropTea",
@@ -9793,10 +9934,13 @@
         "spriteIndex": 15,
         "texture": "Objects_2",
         "price": 25,
-        "productionTime": {
-            "time": 50,
-            "unit": "minutes"
-        }
+        "productionTime": [
+            {
+                "source": "fish smoker",
+                "time": 50,
+                "unit": "minute"
+            }
+        ]
     },
     "PurpleBook": {
         "id": "PurpleBook",

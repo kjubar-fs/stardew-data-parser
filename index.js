@@ -1,10 +1,11 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 31 Jul 2024, 1:08:02 PM
+ *  Last update: 1 Sep 2024, 7:11:08 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe } from "./src/data-model/classes.js";
+import { PROD_SRCS, PROD_UNITS } from "./src/data-model/enums.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
 import { DEBUG, DATA_DIRECTORY, STRINGS_DIRECTORY, SEASONS } from "./src/globals.js";
@@ -129,84 +130,93 @@ function processObject(id, obj) {
     }
 
     // handle production time for necessary items
-    let production;
+    let production = [];
     switch (id) {
         //#region preserves jar
         // pickles, jelly, aged roe
         case "342":
         case "344":
         case "447":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.jar,
                 time: 4000,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // caviar
         case "445":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.jar,
                 time: 6000,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
         
         //#region keg
         // beer
         case "346":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 1750,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // vinegar, mead
         case "419":
         case "459":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 600,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // coffee
         case "395":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 120,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // green tea
         case "614":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 180,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // juice
         case "350":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 6000,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // pale ale
         case "303":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 2250,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         
         // wine
         case "348":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.keg,
                 time: 10000,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
@@ -216,10 +226,11 @@ function processObject(id, obj) {
         case "307":
         case "308":
         case "807":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.mayo,
                 time: 180,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
@@ -227,59 +238,74 @@ function processObject(id, obj) {
         // cheese, goat cheese
         case "424":
         case "426":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.cheese,
                 time: 200,
-                unit: "minutes",
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
         //#region oil maker
         // truffle oil
         case "432":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.oil,
                 time: 360,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
 
-        // TODO: figure out oil having multiple sources
-        // oil (corn)
+        // oil
         case "247":
-            production = {
+            production.push({
+                source: PROD_SRCS.crops.corn,
                 time: 1000,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
+            production.push({
+                source: PROD_SRCS.crops.sunflowerSeed,
+                time: 3200,
+                unit: PROD_UNITS.min,
+            });
+            production.push({
+                source: PROD_SRCS.crops.sunflower,
+                time: 60,
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
         //#region loom
         // cloth
         case "428":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.loom,
                 time: 240,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
         //#region bee house
         // honey
         case "340":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.bee,
                 time: 4,
-                unit: "nights"
-            };
+                unit: PROD_UNITS.night,
+            });
             break;
         //#endregion
 
         //#region fish smoker
         // smoked fish
         case "SmokedFish":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.smoker,
                 time: 50,
-                unit: "minutes"
-            };
+                unit: PROD_UNITS.min,
+            });
             break;
         //#endregion
 
@@ -288,51 +314,73 @@ function processObject(id, obj) {
         case "DriedMushrooms":
         case "DriedFruit":
         case "Raisins":
-            production = {
+            production.push({
+                source: PROD_SRCS.appliances.dehydrate,
                 time: 1,
-                unit: "day"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         //#endregion
 
         //#region coop
-        // white egg, brown egg, large variants, gold egg, void egg
+        // white egg (lg + sm), brown egg (lg + sm), gold egg, void egg
         case "176":
-        case "180":
         case "174":
-        case "182":
-        case "928":
-        case "305":
-            production = {
+            production.push({
+                source: PROD_SRCS.coop.chxWhite,
                 time: 1,
-                unit: "day"
-            };
+                unit: PROD_UNITS.day,
+            });
+            break;
+        case "180":
+        case "182":
+            production.push({
+                source: PROD_SRCS.coop.chxBrown,
+                time: 1,
+                unit: PROD_UNITS.day,
+            });
+            break;
+        case "928":
+            production.push({
+                source: PROD_SRCS.coop.chxGold,
+                time: 1,
+                unit: PROD_UNITS.day,
+            });
+            break;
+        case "305":
+            production.push({
+                source: PROD_SRCS.coop.chxVoid,
+                time: 1,
+                unit: PROD_UNITS.day,
+            });
             break;
         
         // duck egg, duck feather
         case "442":
         case "444":
-            production = {
+            production.push({
+                source: PROD_SRCS.coop.duck,
                 time: 2,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         
-        // rabbit foot, omitting wool as sheep is faster
+        // rabbit foot
         case "446":
-        // case "440":
-            production = {
+            production.push({
+                source: PROD_SRCS.coop.rabbit,
                 time: 4,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         
         // dinosaur egg
         case "107":
-            production = {
+            production.push({
+                source: PROD_SRCS.coop.dino,
                 time: 7,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         //#endregion
 
@@ -340,41 +388,55 @@ function processObject(id, obj) {
         // milk, large milk, truffle
         case "184":
         case "186":
-        case "430":
-            production = {
+            production.push({
+                source: PROD_SRCS.barn.cow,
                 time: 1,
-                unit: "day"
-            };
+                unit: PROD_UNITS.day,
+            });
+            break;
+        case "430":
+            production.push({
+                source: PROD_SRCS.barn.pig,
+                time: 1,
+                unit: PROD_UNITS.day,
+            });
             break;
         
         // goat milk, large goat milk
         case "436":
         case "438":
-            production = {
+            production.push({
+                source: PROD_SRCS.barn.goat,
                 time: 2,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         
-        // TODO: figure out wool having multiple sources
-        // wool (sheep)
+        // wool (sheep + rabbit)
         case "440":
-            production = {
+            production.push({
+                source: PROD_SRCS.barn.sheep,
                 time: 3,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
+            production.push({
+                source: PROD_SRCS.coop.rabbit,
+                time: 4,
+                unit: PROD_UNITS.day,
+            });
             break;
         
         // ostrich egg
         case "289":
-            production = {
+            production.push({
+                source: PROD_SRCS.barn.ostrich,
                 time: 7,
-                unit: "days"
-            };
+                unit: PROD_UNITS.day,
+            });
             break;
         //#endregion
     }
-    if (!!production) {
+    if (production.length !== 0) {
         item.productionTime = production;
     }
 
