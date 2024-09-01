@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 1 Sep 2024, 6:42:25 PM
- *  Last update: 1 Sep 2024, 7:16:35 PM
+ *  Last update: 1 Sep 2024, 7:17:11 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export const PROD_SRCS = Object.freeze({
@@ -41,7 +41,7 @@ export const PROD_SRCS = Object.freeze({
         pig: "pig",
         goat: "goat",
         sheep: "sheep",
-        ostrich: "ostritch",
+        ostrich: "ostrich",
     },
 });
 
