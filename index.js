@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:39:29 PM
+ *  Last update: 6 Sep 2024, 3:44:58 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -918,6 +918,29 @@ function processCategories() {
                     // foraged are forage category
                     item.category = 3;
                 }
+                
+                break;
+            
+            // Sell at Willy's (fish shop)
+            case -23:
+                // all but roe and squid ink are forage
+                if (item.id !== "812" && item.id !== "814") {
+                    item.category = 3;
+                }
+
+                break;
+            
+            // Greens (forage)
+            case -81:
+                // all but sap are forage
+                if (item.id !== "92") {
+                    item.category = 3;
+                }
+                // sap is syrup
+                else {
+                    item.category = 4;
+                }
+
                 break;
 
             default:
