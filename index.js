@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:55:53 PM
+ *  Last update: 6 Sep 2024, 4:02:41 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -997,6 +997,35 @@ function processCategories() {
 
                 // all are fish category
                 item.category = 6;
+
+                break;
+            
+            // Artisan Goods
+            case -26:
+                // all are affected by Artisan
+                subCats.push(102);
+
+                // set artisan goods category for all except generics
+                if (
+                    // jelly
+                    item.id !== "344" &&
+                    // pickles
+                    item.id !== "342" &&
+                    // wine
+                    item.id !== "348" &&
+                    // juice
+                    item.id !== "350" &&
+                    // aged roe
+                    item.id !== "447" &&
+                    // dried fruit
+                    item.id !== "DriedFruit" &&
+                    // dried mushrooms
+                    item.id !== "DriedMushrooms" &&
+                    // smoked fish
+                    item.id !== "SmokedFish"
+                ) {
+                    item.category = 7;
+                }
 
                 break;
 
