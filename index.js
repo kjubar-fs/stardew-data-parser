@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:44:58 PM
+ *  Last update: 6 Sep 2024, 3:50:41 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -782,12 +782,12 @@ function processCategories() {
                 "220",
                 "producesHoney",
             ),
-            "221": new Category(
-                "221",
+            "-5": new Category(
+                "-5",
                 "eggs",
             ),
-            "222": new Category(
-                "222",
+            "-6": new Category(
+                "-6",
                 "milk",
             ),
         },
@@ -932,14 +932,50 @@ function processCategories() {
             
             // Greens (forage)
             case -81:
-                // all but sap are forage
+                // all but sap are forage category
                 if (item.id !== "92") {
                     item.category = 3;
                 }
-                // sap is syrup
+                // sap is syrup category
                 else {
                     item.category = 4;
                 }
+
+                break;
+            
+            // Syrup
+            case -27:
+                // all are affected by Artisan
+                subCats.push(102);
+
+                // all are syrup category
+                item.category = 4;
+
+                break;
+            
+            // Eggs
+            case -5:
+                // all are affected by Rancher
+                subCats.push(101);
+
+                // all are eggs for recipes
+                subCats.push(-5);
+
+                // all are animal goods category
+                item.category = 5;
+
+                break;
+            
+            // Milk
+            case -6:
+                // all are affected by Rancher
+                subCats.push(101);
+
+                // all are milk for recipes
+                subCats.push(-6);
+
+                // all are animal goods category
+                item.category = 5;
 
                 break;
 
