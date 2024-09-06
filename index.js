@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:50:41 PM
+ *  Last update: 6 Sep 2024, 3:55:53 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -924,6 +924,7 @@ function processCategories() {
             // Sell at Willy's (fish shop)
             case -23:
                 // all but roe and squid ink are forage
+                // TODO: figure out what to do about roe
                 if (item.id !== "812" && item.id !== "814") {
                     item.category = 3;
                 }
@@ -976,6 +977,26 @@ function processCategories() {
 
                 // all are animal goods category
                 item.category = 5;
+
+                break;
+            
+            // Sell at Pierre's and Marnie's
+            case -18:
+                // all are affected by Rancher
+                subCats.push(101);
+
+                // all are animal goods category
+                item.category = 5;
+
+                break;
+            
+            // Fish
+            case -4:
+                // all are affected by Fisher and Angler
+                subCats.push(104);
+
+                // all are fish category
+                item.category = 6;
 
                 break;
 
