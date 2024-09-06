@@ -1,6 +1,6 @@
 --  Author: Kaleb Jubar
 --  Created: 4 Sep 2024, 7:10:55 PM
---  Last update: 6 Sep 2024, 3:44:48 PM
+--  Last update: 6 Sep 2024, 3:57:50 PM
 --  Copyright (c) 2024 Kaleb Jubar
 
 Primary Categories:
@@ -27,6 +27,15 @@ Primary Categories:
 - Fish Roe (from Sell at Willy's)
     - manually generate from each fish that has roe
 - Artisan Goods
+    - minus:
+        Jelly
+        Pickles
+        Wine
+        Juice
+        Aged Roe
+        Dried Fruit
+        Dried Mushrooms
+        and Smoked Fish
 - Cooking Recipes
 
 Sub-categories:
