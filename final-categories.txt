@@ -1,6 +1,6 @@
 --  Author: Kaleb Jubar
 --  Created: 4 Sep 2024, 7:10:55 PM
---  Last update: 6 Sep 2024, 3:57:50 PM
+--  Last update: 6 Sep 2024, 4:04:07 PM
 --  Copyright (c) 2024 Kaleb Jubar
 
 Primary Categories:
@@ -35,8 +35,8 @@ Primary Categories:
         Aged Roe
         Dried Fruit
         Dried Mushrooms
-        and Smoked Fish
-- Cooking Recipes
+        Smoked Fish
+- Cooking Recipes (handled separately)
 
 Sub-categories:
 - Vegetable
