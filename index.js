@@ -1,10 +1,10 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 1 Sep 2024, 7:41:03 PM
+ *  Last update: 6 Sep 2024, 3:10:56 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
-import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource } from "./src/data-model/classes.js";
+import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
 import { PROD_SRCS, PROD_UNITS } from "./src/data-model/enums.js";
 import { loadRawJson } from "./src/files/read.js";
 import { writeObjectsToJson } from "./src/files/write.js";
@@ -19,6 +19,7 @@ const buffsParsed = {};
 const cropsParsed = {};
 const fruitTreesParsed = {};
 const cookingRecipesParsed = {};
+let categoriesParsed = {};
 
 processDataFile("Objects", processObject);
 processDataFile("Buffs", processBuff);
@@ -27,12 +28,14 @@ processDataFile("FruitTrees", processFruitTree);
 processDataFile("CookingRecipes", processCookingRecipe);
 processDataFile("TV/CookingChannel", processTVRecipeSource);
 processDataFile("SpecialRecipeSources", processSpecialRecipeSource);
+processCategories();
 
 writeObjectsToJson("objects", objectsParsed);
 writeObjectsToJson("buffs", buffsParsed);
 writeObjectsToJson("crops", cropsParsed);
 writeObjectsToJson("fruitTrees", fruitTreesParsed);
 writeObjectsToJson("cookingRecipes", cookingRecipesParsed);
+writeObjectsToJson("categories", categoriesParsed);
 
 ///-----------
 /// Functions
@@ -645,6 +648,203 @@ function processSpecialRecipeSource(name, sources) {
             ...cookingRecipesParsed[name].unlockSources,
             ...sources
         ];
+    }
+}
+
+/**
+ * Process custom category setup.
+ * Updates objects with appropriate categories and sub-categories, and builds
+ * the parsed category index.
+ */
+function processCategories() {
+    categoriesParsed = {
+        primary: {
+            "0": new Category(
+                "0",
+                "crops",
+                "Crops",
+                "",
+            ),
+            "1": new Category(
+                "1",
+                "fruitTrees",
+                "Fruit Trees",
+                "",
+            ),
+            "2": new Category(
+                "2",
+                "flowers",
+                "Flowers",
+                "",
+            ),
+            "3": new Category(
+                "3",
+                "forage",
+                "Forageables",
+                "",
+            ),
+            "4": new Category(
+                "4",
+                "syrups",
+                "Syrups",
+                "",
+            ),
+            "5": new Category(
+                "5",
+                "animalProducts",
+                "Animal Products",
+                "",
+            ),
+            "6": new Category(
+                "6",
+                "fish",
+                "Fish",
+                "",
+            ),
+            "7": new Category(
+                "7",
+                "artisanGoods",
+                "Artisan Goods",
+                "",
+            ),
+            "8": new Category(
+                "8",
+                "cooking",
+                "Cooking Recipes",
+                "",
+            ),
+        },
+
+        secondary: {
+            // perk sub-categories
+            "100": new Category(
+                "100",
+                "tiller",
+                "Tiller",
+            ),
+            "101": new Category(
+                "101",
+                "rancher",
+                "Rancher",
+            ),
+            "102": new Category(
+                "102",
+                "artisan",
+                "Artisan",
+            ),
+            "103": new Category(
+                "103",
+                "tapper",
+                "Tapper",
+            ),
+            "104": new Category(
+                "104",
+                "fisherAngler",
+                "Fisher and Angler",
+            ),
+            "105": new Category(
+                "105",
+                "gemologist",
+                "Gemologist",
+            ),
+            "106": new Category(
+                "106",
+                "blacksmith",
+                "Blacksmith",
+            ),
+
+            // functional sub-categories
+            "200": new Category(
+                "200",
+                "vegetable",
+            ),
+            "201": new Category(
+                "201",
+                "wheat",
+            ),
+            "202": new Category(
+                "202",
+                "hops",
+            ),
+            "203": new Category(
+                "203",
+                "tea",
+            ),
+            "210": new Category(
+                "210",
+                "fruit",
+            ),
+            "211": new Category(
+                "211",
+                "grape",
+            ),
+            "220": new Category(
+                "220",
+                "producesHoney",
+            ),
+            "221": new Category(
+                "221",
+                "eggs",
+            ),
+            "222": new Category(
+                "222",
+                "milk",
+            ),
+        },
+    };
+
+    for (const id in objectsParsed) {
+        const item = objectsParsed[id];
+        const subCats = [];
+
+        switch (item.category) {
+            // Vegetables
+            case -75:
+                // all vegetables are affected by Tiller
+                subCats.push(100)
+
+                // all vegetables can be processed
+                subCats.push(200)
+
+                // check for processing overrides
+                switch (item.id) {
+                    // wheat
+                    case "262":
+                        subCats.push(201);
+                        break;
+                    
+                    // hops
+                    case "304":
+                        subCats.push(202);
+                        break;
+                    
+                    // tea
+                    case "815":
+                        subCats.push(203);
+                        break;
+
+                    default:
+                        break;
+                }
+
+                // set all to crops main category, except fiddlehead fern
+                if (item.id === "259") {
+                    item.category = 3;
+                } else {
+                    item.category = 0;
+                }
+                
+                break;
+            
+            // 
+
+            default:
+                break;
+        }
+
+        if (subCats.length !== 0) {
+            item.subCategories = subCats;
+        }
     }
 }
 
