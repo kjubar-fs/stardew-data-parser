@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:10:56 PM
+ *  Last update: 6 Sep 2024, 3:35:10 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -836,12 +836,75 @@ function processCategories() {
                 
                 break;
             
-            // 
+            // Fruits
+            case -79:
+                // handle non-foraged fruits
+                if (
+                    // blackberry
+                    item.id !== "410" &&
+                    // coconut
+                    item.id !== "88" &&
+                    // crystal fruit
+                    item.id !== "414" &&
+                    // salmonberry
+                    item.id !== "296" &&
+                    // spice berry
+                    item.id !== "396" &&
+                    // wild plum
+                    item.id !== "406"
+                ) {
+                    // all non-foraged fruits are affected by Tiller
+                    subCats.push(100);
+                    
+                    // set fruit tree fruits to fruit tree category
+                    if (Object.values(fruitTreesParsed).find((tree) => tree.fruitId === item.id)) {
+                        item.category = 1;
+                    }
+                    // and non-tree crops to crops category
+                    else {
+                        item.category = 0;
+                    }
+                } else {
+                    // set foraged fruits to forage primary category
+                    item.category = 3;
+                }
+
+                // all fruits can be processed
+                subCats.push(210);
+
+                // check for processing overrides
+                // only grapes as of now
+                if (item.id === "398") {
+                    subCats.push(211);
+                }
+
+                break;
+            
+            // Sell at Pierre's
+            case -17:
+                // handle sweet gem berry and truffle
+                // sweet gem berry
+                if (item.id === "417") {
+                    // crop category
+                    item.category = 0;
+
+                    // no other special options
+                }
+                // truffle
+                else if (item.id === "430") {
+                    // animal goods category
+                    item.category = 5;
+
+                    // no other special options
+                }
+
+                break;
 
             default:
                 break;
         }
 
+        // add parsed sub-categories
         if (subCats.length !== 0) {
             item.subCategories = subCats;
         }
