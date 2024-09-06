@@ -1,6 +1,6 @@
 --  Author: Kaleb Jubar
 --  Created: 4 Sep 2024, 7:10:55 PM
---  Last update: 5 Sep 2024, 1:56:00 PM
+--  Last update: 6 Sep 2024, 3:44:48 PM
 --  Copyright (c) 2024 Kaleb Jubar
 
 Primary Categories:
@@ -11,10 +11,12 @@ Primary Categories:
 - Fruit Trees
 - Flowers (minus Sweet Pea and Crocus)
 - Forage (minus Sap)
+    - Greens (forage)
     - Sell at Willy's (minus Roe and Squid Ink)
     - Fiddlehead Fern (from Vegetables)
     - Sweet Pea and Crocus (from Flowers)
 - Syrups (tapped)
+    - Syrup
     - Sap (from Forage)
 - Animal Goods
     - Eggs
