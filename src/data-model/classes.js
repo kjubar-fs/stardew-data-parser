@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 2:16:39 PM
- *  Last update: 1 Sep 2024, 7:35:55 PM
+ *  Last update: 5 Sep 2024, 2:31:41 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 export class Item {
@@ -164,5 +164,26 @@ export class ProductionSource {
         this.source = source;
         this.time = time;
         this.unit = unit;
+    }
+}
+
+export class Category {
+    id;
+    name;
+    displayName;
+    iconPath;
+
+    /**
+     * Create a new Category.
+     * @param {string} id category ID
+     * @param {string} name category internal name
+     * @param {string} displayName category display name
+     * @param {string} iconPath path to category icon
+     */
+    constructor(id, name, displayName, iconPath) {
+        this.id = id;
+        this.name = name;
+        if (displayName) this.displayName = displayName;
+        if (iconPath) this.iconPath = iconPath;
     }
 }
