@@ -1,0 +1,122 @@
+{
+    "primary": {
+        "0": {
+            "id": "0",
+            "name": "crops",
+            "displayName": "Crops"
+        },
+        "1": {
+            "id": "1",
+            "name": "fruitTrees",
+            "displayName": "Fruit Trees"
+        },
+        "2": {
+            "id": "2",
+            "name": "flowers",
+            "displayName": "Flowers"
+        },
+        "3": {
+            "id": "3",
+            "name": "forage",
+            "displayName": "Forageables"
+        },
+        "4": {
+            "id": "4",
+            "name": "syrups",
+            "displayName": "Syrups"
+        },
+        "5": {
+            "id": "5",
+            "name": "animalProducts",
+            "displayName": "Animal Products"
+        },
+        "6": {
+            "id": "6",
+            "name": "fish",
+            "displayName": "Fish"
+        },
+        "7": {
+            "id": "7",
+            "name": "artisanGoods",
+            "displayName": "Artisan Goods"
+        },
+        "8": {
+            "id": "8",
+            "name": "cooking",
+            "displayName": "Cooking Recipes"
+        }
+    },
+    "secondary": {
+        "100": {
+            "id": "100",
+            "name": "tiller",
+            "displayName": "Tiller"
+        },
+        "101": {
+            "id": "101",
+            "name": "rancher",
+            "displayName": "Rancher"
+        },
+        "102": {
+            "id": "102",
+            "name": "artisan",
+            "displayName": "Artisan"
+        },
+        "103": {
+            "id": "103",
+            "name": "tapper",
+            "displayName": "Tapper"
+        },
+        "104": {
+            "id": "104",
+            "name": "fisherAngler",
+            "displayName": "Fisher and Angler"
+        },
+        "105": {
+            "id": "105",
+            "name": "gemologist",
+            "displayName": "Gemologist"
+        },
+        "106": {
+            "id": "106",
+            "name": "blacksmith",
+            "displayName": "Blacksmith"
+        },
+        "200": {
+            "id": "200",
+            "name": "vegetable"
+        },
+        "201": {
+            "id": "201",
+            "name": "wheat"
+        },
+        "202": {
+            "id": "202",
+            "name": "hops"
+        },
+        "203": {
+            "id": "203",
+            "name": "tea"
+        },
+        "210": {
+            "id": "210",
+            "name": "fruit"
+        },
+        "211": {
+            "id": "211",
+            "name": "grape"
+        },
+        "220": {
+            "id": "220",
+            "name": "producesHoney"
+        },
+        "-5": {
+            "id": "-5",
+            "name": "eggs"
+        },
+        "-6": {
+            "id": "-6",
+            "name": "milk"
+        }
+    }
+}
