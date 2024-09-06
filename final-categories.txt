@@ -1,0 +1,72 @@
+--  Author: Kaleb Jubar
+--  Created: 4 Sep 2024, 7:10:55 PM
+--  Last update: 5 Sep 2024, 1:56:00 PM
+--  Copyright (c) 2024 Kaleb Jubar
+
+Primary Categories:
+- Crops
+    - Vegetables (minus Fiddlehead Fern)
+    - Fruits (minus fruit trees + forage)
+    - Sweet Gem Berry (from Sell at Pierre's)
+- Fruit Trees
+- Flowers (minus Sweet Pea and Crocus)
+- Forage (minus Sap)
+    - Sell at Willy's (minus Roe and Squid Ink)
+    - Fiddlehead Fern (from Vegetables)
+    - Sweet Pea and Crocus (from Flowers)
+- Syrups (tapped)
+    - Sap (from Forage)
+- Animal Goods
+    - Eggs
+    - Milk
+    - Truffle (from Sell at Pierre's)
+    - Sell at Pierre's and Marnie's
+- Fish
+- Fish Roe (from Sell at Willy's)
+    - manually generate from each fish that has roe
+- Artisan Goods
+- Cooking Recipes
+
+Sub-categories:
+- Vegetable
+    pickles in preserve jar
+    juice in keg (unless overridden)
+- Wheat (override)
+    beer in keg
+- Hops (override)
+    pale ale in keg
+- Tea (override)
+    green tea in keg
+- Fruit
+    jelly in preserve jar
+    wine in keg
+    dried into dried fruit in dehydrator (unless overridden)
+- Grape (override)
+    dried into raisins in dehydrator
+- Produces Honey
+    when planted near a bee house, creates specific honey
+- Eggs
+    animal eggs used in cooking
+- Milk
+    animal milk used in cooking
+
+Perk-related Sub-categories:
+applied based on original Stardew category
+- Tiller
+    vegetables
+    fruits (minus foraged)
+    flowers (including foraged)
+- Rancher
+    eggs
+    milk
+    sell at pierre's and marnie's
+- Artisan
+    artisan goods
+- Tapper
+    syrups
+- Fisher and Angler
+    fish
+- Gemologist (not implemented yet)
+    gems
+    minerals
+- Blacksmith (not implemented yet)
