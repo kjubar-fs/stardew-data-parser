@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 3:35:10 PM
+ *  Last update: 6 Sep 2024, 3:39:29 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -898,6 +898,26 @@ function processCategories() {
                     // no other special options
                 }
 
+                break;
+            
+            // Flowers
+            case -80:
+                // all flowers are affected by Tiller, including foraged
+                subCats.push(100);
+
+                // handle non-foraged flowers
+                if (item.id !== "418" && item.id !== "402") {
+                    // all planted flowers make honey
+                    subCats.push(220);
+
+                    // all planted flowers are flower category
+                    item.category = 2;
+                }
+                // crocus and sweet pea
+                else {
+                    // foraged are forage category
+                    item.category = 3;
+                }
                 break;
 
             default:
