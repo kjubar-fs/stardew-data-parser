@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 11 Sep 2024, 5:26:27 PM
+ *  Last update: 11 Sep 2024, 5:34:50 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -591,7 +591,7 @@ function processCookingRecipe(recipeName, recipeString) {
     }
 
     if (DEBUG) console.log(recipe);
-    cookingRecipesParsed[recipeName] = recipe;
+    cookingRecipesParsed[recipeYield] = recipe;
 }
 
 /**
