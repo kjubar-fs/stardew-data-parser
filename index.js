@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 11 Sep 2024, 5:34:50 PM
+ *  Last update: 11 Sep 2024, 5:39:39 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -997,6 +997,9 @@ function processCategories() {
 
                 // all are fish category
                 item.category = 7;
+
+                // all are fish for recipes
+                subCats.push(-4);
 
                 break;
             

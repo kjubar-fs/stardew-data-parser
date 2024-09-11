@@ -1044,7 +1044,8 @@
             "health": 0
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "129": {
@@ -1062,7 +1063,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "130": {
@@ -1080,7 +1082,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "131": {
@@ -1098,7 +1101,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "132": {
@@ -1116,7 +1120,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "136": {
@@ -1134,7 +1139,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "137": {
@@ -1152,7 +1158,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "138": {
@@ -1170,7 +1177,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "139": {
@@ -1188,7 +1196,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "140": {
@@ -1206,7 +1215,8 @@
             "health": 13
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "141": {
@@ -1224,7 +1234,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "142": {
@@ -1242,7 +1253,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "143": {
@@ -1260,7 +1272,8 @@
             "health": 22
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "144": {
@@ -1278,7 +1291,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "145": {
@@ -1296,7 +1310,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "146": {
@@ -1314,7 +1329,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "147": {
@@ -1332,7 +1348,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "148": {
@@ -1350,7 +1367,8 @@
             "health": 13
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "149": {
@@ -1364,7 +1382,8 @@
         "texture": "springobjects",
         "price": 150,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "150": {
@@ -1382,7 +1401,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "151": {
@@ -1400,7 +1420,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "152": {
@@ -1448,7 +1469,8 @@
             "health": 0
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "155": {
@@ -1466,7 +1488,8 @@
             "health": 56
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "156": {
@@ -1484,7 +1507,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "157": {
@@ -1513,7 +1537,8 @@
         "texture": "springobjects",
         "price": 300,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "159": {
@@ -1531,7 +1556,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "160": {
@@ -1549,7 +1575,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "161": {
@@ -1567,7 +1594,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "162": {
@@ -1585,7 +1613,8 @@
             "health": 22
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "163": {
@@ -1603,7 +1632,8 @@
             "health": 225
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "164": {
@@ -1621,7 +1651,8 @@
             "health": 5
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "165": {
@@ -1639,7 +1670,8 @@
             "health": 0
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "166": {
@@ -3138,7 +3170,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "268": {
@@ -3175,7 +3208,8 @@
             "health": 22
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "270": {
@@ -4340,7 +4374,8 @@
         "texture": "springobjects",
         "price": 50,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "373": {
@@ -7322,7 +7357,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "684": {
@@ -7472,7 +7508,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "699": {
@@ -7490,7 +7527,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "700": {
@@ -7508,7 +7546,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "701": {
@@ -7526,7 +7565,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "702": {
@@ -7544,7 +7584,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "703": {
@@ -7573,7 +7614,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "705": {
@@ -7591,7 +7633,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "706": {
@@ -7609,7 +7652,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "707": {
@@ -7627,7 +7671,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "708": {
@@ -7645,7 +7690,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "709": {
@@ -7681,7 +7727,8 @@
         "texture": "springobjects",
         "price": 120,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "716": {
@@ -7695,7 +7742,8 @@
         "texture": "springobjects",
         "price": 75,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "717": {
@@ -7709,7 +7757,8 @@
         "texture": "springobjects",
         "price": 100,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "718": {
@@ -7723,7 +7772,8 @@
         "texture": "springobjects",
         "price": 50,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "719": {
@@ -7737,7 +7787,8 @@
         "texture": "springobjects",
         "price": 30,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "720": {
@@ -7751,7 +7802,8 @@
         "texture": "springobjects",
         "price": 60,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "721": {
@@ -7765,7 +7817,8 @@
         "texture": "springobjects",
         "price": 65,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "722": {
@@ -7779,7 +7832,8 @@
         "texture": "springobjects",
         "price": 20,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "723": {
@@ -7793,7 +7847,8 @@
         "texture": "springobjects",
         "price": 40,
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "724": {
@@ -7983,7 +8038,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "742": {
@@ -8243,7 +8299,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "784": {
@@ -8382,7 +8439,8 @@
             "health": 28
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "796": {
@@ -8400,7 +8458,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "797": {
@@ -8429,7 +8488,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "799": {
@@ -8447,7 +8507,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "800": {
@@ -8465,7 +8526,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "801": {
@@ -8890,7 +8952,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "837": {
@@ -8908,7 +8971,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "838": {
@@ -8926,7 +8990,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "839": {
@@ -9558,7 +9623,8 @@
             "health": 16
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "899": {
@@ -9576,7 +9642,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "900": {
@@ -9594,7 +9661,8 @@
             "health": 225
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "901": {
@@ -9612,7 +9680,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "902": {
@@ -9630,7 +9699,8 @@
             "health": 11
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "903": {
@@ -10874,7 +10944,8 @@
             "health": 0
         },
         "subCategories": [
-            104
+            104,
+            -4
         ]
     },
     "VolcanoCoalNode0": {
