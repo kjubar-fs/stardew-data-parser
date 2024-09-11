@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 11 Sep 2024, 5:39:39 PM
+ *  Last update: 11 Sep 2024, 5:41:00 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -781,6 +781,10 @@ function processCategories() {
             "220": new Category(
                 "220",
                 "producesHoney",
+            ),
+            "-4": new Category(
+                "-4",
+                "fish",
             ),
             "-5": new Category(
                 "-5",
