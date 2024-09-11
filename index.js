@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 6 Sep 2024, 4:02:41 PM
+ *  Last update: 11 Sep 2024, 5:09:41 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -659,56 +659,56 @@ function processSpecialRecipeSource(name, sources) {
 function processCategories() {
     categoriesParsed = {
         primary: {
-            "0": new Category(
-                "0",
+            "1": new Category(
+                "1",
                 "crops",
                 "Crops",
                 "",
             ),
-            "1": new Category(
-                "1",
+            "2": new Category(
+                "2",
                 "fruitTrees",
                 "Fruit Trees",
                 "",
             ),
-            "2": new Category(
-                "2",
+            "3": new Category(
+                "3",
                 "flowers",
                 "Flowers",
                 "",
             ),
-            "3": new Category(
-                "3",
+            "4": new Category(
+                "4",
                 "forage",
                 "Forageables",
                 "",
             ),
-            "4": new Category(
-                "4",
+            "5": new Category(
+                "5",
                 "syrups",
                 "Syrups",
                 "",
             ),
-            "5": new Category(
-                "5",
+            "6": new Category(
+                "6",
                 "animalProducts",
                 "Animal Products",
                 "",
             ),
-            "6": new Category(
-                "6",
+            "7": new Category(
+                "7",
                 "fish",
                 "Fish",
                 "",
             ),
-            "7": new Category(
-                "7",
+            "8": new Category(
+                "8",
                 "artisanGoods",
                 "Artisan Goods",
                 "",
             ),
-            "8": new Category(
-                "8",
+            "9": new Category(
+                "9",
                 "cooking",
                 "Cooking Recipes",
                 "",
@@ -829,9 +829,9 @@ function processCategories() {
 
                 // set all to crops main category, except fiddlehead fern
                 if (item.id === "259") {
-                    item.category = 3;
+                    item.category = 4;
                 } else {
-                    item.category = 0;
+                    item.category = 1;
                 }
                 
                 break;
@@ -858,15 +858,15 @@ function processCategories() {
                     
                     // set fruit tree fruits to fruit tree category
                     if (Object.values(fruitTreesParsed).find((tree) => tree.fruitId === item.id)) {
-                        item.category = 1;
+                        item.category = 2;
                     }
                     // and non-tree crops to crops category
                     else {
-                        item.category = 0;
+                        item.category = 1;
                     }
                 } else {
                     // set foraged fruits to forage primary category
-                    item.category = 3;
+                    item.category = 4;
                 }
 
                 // all fruits can be processed
@@ -886,14 +886,14 @@ function processCategories() {
                 // sweet gem berry
                 if (item.id === "417") {
                     // crop category
-                    item.category = 0;
+                    item.category = 1;
 
                     // no other special options
                 }
                 // truffle
                 else if (item.id === "430") {
                     // animal goods category
-                    item.category = 5;
+                    item.category = 6;
 
                     // no other special options
                 }
@@ -911,12 +911,12 @@ function processCategories() {
                     subCats.push(220);
 
                     // all planted flowers are flower category
-                    item.category = 2;
+                    item.category = 3;
                 }
                 // crocus and sweet pea
                 else {
                     // foraged are forage category
-                    item.category = 3;
+                    item.category = 4;
                 }
                 
                 break;
@@ -926,7 +926,7 @@ function processCategories() {
                 // all but roe and squid ink are forage
                 // TODO: figure out what to do about roe
                 if (item.id !== "812" && item.id !== "814") {
-                    item.category = 3;
+                    item.category = 4;
                 }
 
                 break;
@@ -935,11 +935,11 @@ function processCategories() {
             case -81:
                 // all but sap are forage category
                 if (item.id !== "92") {
-                    item.category = 3;
+                    item.category = 4;
                 }
                 // sap is syrup category
                 else {
-                    item.category = 4;
+                    item.category = 5;
                 }
 
                 break;
@@ -950,7 +950,7 @@ function processCategories() {
                 subCats.push(102);
 
                 // all are syrup category
-                item.category = 4;
+                item.category = 5;
 
                 break;
             
@@ -963,7 +963,7 @@ function processCategories() {
                 subCats.push(-5);
 
                 // all are animal goods category
-                item.category = 5;
+                item.category = 6;
 
                 break;
             
@@ -976,7 +976,7 @@ function processCategories() {
                 subCats.push(-6);
 
                 // all are animal goods category
-                item.category = 5;
+                item.category = 6;
 
                 break;
             
@@ -986,7 +986,7 @@ function processCategories() {
                 subCats.push(101);
 
                 // all are animal goods category
-                item.category = 5;
+                item.category = 6;
 
                 break;
             
@@ -996,7 +996,7 @@ function processCategories() {
                 subCats.push(104);
 
                 // all are fish category
-                item.category = 6;
+                item.category = 7;
 
                 break;
             
@@ -1015,6 +1015,8 @@ function processCategories() {
                     item.id !== "348" &&
                     // juice
                     item.id !== "350" &&
+                    // honey
+                    item.id !== "340" &&
                     // aged roe
                     item.id !== "447" &&
                     // dried fruit
@@ -1024,7 +1026,7 @@ function processCategories() {
                     // smoked fish
                     item.id !== "SmokedFish"
                 ) {
-                    item.category = 7;
+                    item.category = 8;
                 }
 
                 break;
