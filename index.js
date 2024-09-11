@@ -1,7 +1,7 @@
 /*
  *  Author: Kaleb Jubar
  *  Created: 29 Jul 2024, 1:11:14 PM
- *  Last update: 11 Sep 2024, 5:23:57 PM
+ *  Last update: 11 Sep 2024, 5:26:27 PM
  *  Copyright (c) 2024 Kaleb Jubar
  */
 import { Item, Buff, ConsumptionEffects, Crop, FruitTree, CookingRecipe, ProductionSource, Category } from "./src/data-model/classes.js";
@@ -784,7 +784,7 @@ function processCategories() {
             ),
             "-5": new Category(
                 "-5",
-                "eggs",
+                "egg",
             ),
             "-6": new Category(
                 "-6",
